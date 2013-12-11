@@ -253,6 +253,19 @@
 					</item>
 				</content>
 			</control>
+			<control type="label">
+				<description>issued at label</description>
+				<left>360</left>
+				<top>580</top>
+				<width>260</width>
+				<height>35</height>
+				<font>font10</font>
+				<textcolor>white</textcolor>
+				<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(HourlyObservation.IssuedAt)][/COLOR]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<textcolor>grey2</textcolor>
+			</control>
 		</control>
 	</include>
 </includes>
