@@ -6,8 +6,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
-				<posx>20</posx>
-				<posy>13</posy>
+				<left>20</left>
+				<top>13</top>
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
@@ -18,8 +18,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="52">
-				<posx>15</posx>
-				<posy>60</posy>
+				<left>15</left>
+				<top>60</top>
 				<width>600</width>
 				<height>515</height>
 				<onleft>9000</onleft>
@@ -31,15 +31,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="100" width="600">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>600</width>
 						<height>100</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>25</posy>
+						<left>30</left>
+						<top>25</top>
 						<width>100</width>
 						<height>70</height>
 						<font>font12</font>
@@ -48,16 +48,16 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>100</posx>
-						<posy>15</posy>
+						<left>100</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
-						<posx>170</posx>
-						<posy>55</posy>
+						<left>170</left>
+						<top>55</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font12</font>
@@ -68,40 +68,40 @@
 						<label>$INFO[ListItem.Property(Precipitation)]</label>
 					</control>
 					<control type="image">
-						<posx>200</posx>
-						<posy>25</posy>
+						<left>200</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>200</posx>
-						<posy>25</posy>
+						<left>200</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>270</posx>
-						<posy>25</posy>
+						<left>270</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(FeelsLikeTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>270</posx>
-						<posy>25</posy>
+						<left>270</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(FeelsLikeTempFrameIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>340</posx>
-						<posy>15</posy>
+						<left>340</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
@@ -109,8 +109,8 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>375</posx>
-						<posy>15</posy>
+						<left>375</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font13_title</font>
@@ -120,8 +120,8 @@
 						<textcolor>black</textcolor>
 					</control>
 					<control type="image">
-						<posx>420</posx>
-						<posy>15</posy>
+						<left>420</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
@@ -129,8 +129,8 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>455</posx>
-						<posy>15</posy>
+						<left>455</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font13_title</font>
@@ -140,8 +140,8 @@
 						<textcolor>black</textcolor>
 					</control>
 					<control type="image">
-						<posx>500</posx>
-						<posy>25</posy>
+						<left>500</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
@@ -149,8 +149,8 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>525</posx>
-						<posy>15</posy>
+						<left>525</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font13_title</font>
@@ -162,8 +162,8 @@
 				</itemlayout>
 				<focusedlayout height="100" width="600">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>600</width>
 						<height>100</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
@@ -171,8 +171,8 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>600</width>
 						<height>100</height>
 						<texture border="10">button-focus2.png</texture>
@@ -180,8 +180,8 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>25</posy>
+						<left>30</left>
+						<top>25</top>
 						<width>100</width>
 						<height>70</height>
 						<font>font12</font>
@@ -190,16 +190,16 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>100</posx>
-						<posy>15</posy>
+						<left>100</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
-						<posx>170</posx>
-						<posy>55</posy>
+						<left>170</left>
+						<top>55</top>
 						<width>70</width>
 						<font>font12</font>
 						<align>right</align>
@@ -208,40 +208,40 @@
 						<label>$INFO[ListItem.Property(Precipitation)]</label>
 					</control>
 					<control type="image">
-						<posx>200</posx>
-						<posy>25</posy>
+						<left>200</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>200</posx>
-						<posy>25</posy>
+						<left>200</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>270</posx>
-						<posy>25</posy>
+						<left>270</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(FeelsLikeTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>270</posx>
-						<posy>25</posy>
+						<left>270</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(FeelsLikeTempFrameIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>340</posx>
-						<posy>15</posy>
+						<left>340</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
@@ -249,8 +249,8 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>375</posx>
-						<posy>15</posy>
+						<left>375</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font13_title</font>
@@ -260,8 +260,8 @@
 						<textcolor>black</textcolor>
 					</control>
 					<control type="image">
-						<posx>420</posx>
-						<posy>15</posy>
+						<left>420</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
@@ -269,8 +269,8 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>455</posx>
-						<posy>15</posy>
+						<left>455</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font13_title</font>
@@ -280,8 +280,8 @@
 						<textcolor>black</textcolor>
 					</control>
 					<control type="image">
-						<posx>500</posx>
-						<posy>25</posy>
+						<left>500</left>
+						<top>25</top>
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
@@ -289,8 +289,8 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>525</posx>
-						<posy>15</posy>
+						<left>525</left>
+						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<font>font13_title</font>
@@ -985,8 +985,8 @@
 			</control>
 			<control type="label">
 				<description>issued at label</description>
-				<posx>600</posx>
-				<posy>580</posy>
+				<left>600</left>
+				<top>580</top>
 				<width>260</width>
 				<height>35</height>
 				<font>font10</font>
@@ -997,8 +997,8 @@
 				<textcolor>grey2</textcolor>
 			</control>
 			<control type="scrollbar" id="62">
-				<posx>615</posx>
-				<posy>60</posy>
+				<left>615</left>
+				<top>60</top>
 				<width>25</width>
 				<height>515</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -1015,8 +1015,8 @@
 			<control type="label">
 				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
 				<description>number of files/pages</description>
-				<posx>660</posx>
-				<posy>627</posy>
+				<left>660</left>
+				<top>627</top>
 				<width>570</width>
 				<font>font12</font>
 				<align>right</align>
