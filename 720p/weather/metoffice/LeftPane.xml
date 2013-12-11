@@ -50,7 +50,7 @@
 			</control>
 			<control type="label">
 				<description>current temp Value</description>
-				<left>230</left>
+				<left>50</left>
 				<top>235</top>
 				<width>180</width>
 				<height>40</height>
@@ -97,7 +97,7 @@
 			</control>
 			<control type="label">
 				<description>current visibility label</description>
-				<left>230</left>
+				<left>60</left>
 				<top>460</top>
 				<width>170</width>
 				<height>35</height>
@@ -110,7 +110,7 @@
 			</control>
 			<control type="label">
 				<description>current pressure label</description>
-				<left>230</left>
+				<left>60</left>
 				<top>490</top>
 				<width>170</width>
 				<height>35</height>
@@ -123,7 +123,7 @@
 			</control>
 			<control type="label">
 				<description>current wind label</description>
-				<left>230</left>
+				<left>60</left>
 				<top>520</top>
 				<width>170</width>
 				<height>35</height>
@@ -136,7 +136,7 @@
 			</control>
 			<control type="label">
 				<description>current wind gust label</description>
-				<left>230</left>
+				<left>60</left>
 				<top>550</top>
 				<width>170</width>
 				<height>35</height>
