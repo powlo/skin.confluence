@@ -63,7 +63,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(HighTempIcon)]</texture>
+						<texture>weather/temp/$INFO[ListItem.Property(HighTemp)].png</texture>
 					</control>
 					<control type="image">
 						<left>240</left>
@@ -71,7 +71,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+						<texture>weather/temp/actual.png</texture>
 					</control>
 					<control type="image">
 						<left>340</left>
@@ -79,7 +79,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(LowTempIcon)]</texture>
+						<texture>weather/temp/$INFO[ListItem.Property(LowTemp)].png</texture>
 					</control>
 					<control type="image">
 						<left>340</left>
@@ -87,7 +87,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+						<texture>weather/temp/actual.png</texture>
 					</control>
 					<control type="image">
 						<left>430</left>
@@ -95,7 +95,7 @@
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
+						<texture>weather/wind/average/$INFO[ListItem.Property(WindDirection)].png</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -147,7 +147,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(HighTempIcon)]</texture>
+						<texture>weather/temp/$INFO[ListItem.Property(HighTemp)].png</texture>
 					</control>
 					<control type="image">
 						<left>240</left>
@@ -155,7 +155,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+						<texture>weather/temp/actual.png</texture>
 					</control>
 					<control type="image">
 						<left>340</left>
@@ -163,7 +163,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(LowTempIcon)]</texture>
+						<texture>weather/temp/$INFO[ListItem.Property(LowTemp)].png</texture>
 					</control>
 					<control type="image">
 						<left>340</left>
@@ -171,7 +171,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+						<texture>weather/temp/actual.png</texture>
 					</control>
 					<control type="image">
 						<left>430</left>
@@ -179,7 +179,7 @@
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
+						<texture>weather/wind/average/$INFO[ListItem.Property(WindDirection)].png</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -204,50 +204,45 @@
 					<item>
 						<label>$INFO[Window.Property(Day0.Title)]</label>
 						<icon>$INFO[Window.Property(Day0.OutlookIcon)]</icon>
-						<property name="HighTempIcon">$INFO[Window.Property(Day0.HighTempIcon)]</property>
-						<property name="LowTempIcon">$INFO[Window.Property(Day0.LowTempIcon)]</property>
-						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Day0.WindIcon)]</property>
+						<property name="HighTemp">$INFO[Window.Property(Day0.HighTemp)]</property>
+						<property name="LowTemp">$INFO[Window.Property(Day0.LowTemp)]</property>
+						<property name="WindDirection">$INFO[Window.Property(Day0.WindDirection)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Day0.WindSpeed)]</property>
 						<onclick>noop</onclick>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(Day1.Title)]</label>
 						<icon>$INFO[Window.Property(Day1.OutlookIcon)]</icon>
-						<property name="HighTempIcon">$INFO[Window.Property(Day1.HighTempIcon)]</property>
-						<property name="LowTempIcon">$INFO[Window.Property(Day1.LowTempIcon)]</property>
-						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Day1.WindIcon)]</property>
+						<property name="HighTemp">$INFO[Window.Property(Day1.HighTemp)]</property>
+						<property name="LowTemp">$INFO[Window.Property(Day1.LowTemp)]</property>
+						<property name="WindDirection">$INFO[Window.Property(Day1.WindDirection)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Day1.WindSpeed)]</property>
 						<onclick>noop</onclick>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(Day2.Title)]</label>
 						<icon>$INFO[Window.Property(Day2.OutlookIcon)]</icon>
-						<property name="HighTempIcon">$INFO[Window.Property(Day2.HighTempIcon)]</property>
-						<property name="LowTempIcon">$INFO[Window.Property(Day2.LowTempIcon)]</property>
-						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Day2.WindIcon)]</property>
+						<property name="HighTemp">$INFO[Window.Property(Day2.HighTemp)]</property>
+						<property name="LowTemp">$INFO[Window.Property(Day2.LowTemp)]</property>
+						<property name="WindDirection">$INFO[Window.Property(Day2.WindDirection)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Day2.WindSpeed)]</property>
 						<onclick>noop</onclick>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(Day3.Title)]</label>
 						<icon>$INFO[Window.Property(Day3.OutlookIcon)]</icon>
-						<property name="HighTempIcon">$INFO[Window.Property(Day3.HighTempIcon)]</property>
-						<property name="LowTempIcon">$INFO[Window.Property(Day3.LowTempIcon)]</property>
-						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Day3.WindIcon)]</property>
+						<property name="HighTemp">$INFO[Window.Property(Day3.HighTemp)]</property>
+						<property name="LowTemp">$INFO[Window.Property(Day3.LowTemp)]</property>
+						<property name="WindDirection">$INFO[Window.Property(Day3.WindDirection)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Day3.WindSpeed)]</property>
 						<onclick>noop</onclick>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(Day4.Title)]</label>
 						<icon>$INFO[Window.Property(Day4.OutlookIcon)]</icon>
-						<property name="HighTempIcon">$INFO[Window.Property(Day4.HighTempIcon)]</property>
-						<property name="LowTempIcon">$INFO[Window.Property(Day4.LowTempIcon)]</property>
-						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Day4.WindIcon)]</property>
+						<property name="HighTemp">$INFO[Window.Property(Day4.HighTemp)]</property>
+						<property name="LowTemp">$INFO[Window.Property(Day4.LowTemp)]</property>
+						<property name="WindDirection">$INFO[Window.Property(Day4.WindDirection)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Day4.WindSpeed)]</property>
 						<onclick>noop</onclick>
 					</item>
