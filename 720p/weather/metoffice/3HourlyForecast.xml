@@ -100,12 +100,13 @@
 						<texture>weather/temp/feelslike.png</texture>
 					</control>
 					<control type="image">
+						<description>average wind icon</description>
 						<left>340</left>
 						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
+						<texture>$INFO[ListItem.Property(WindDirection),weather/wind/average/,.png]</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -120,12 +121,13 @@
 						<textcolor>black</textcolor>
 					</control>
 					<control type="image">
+						<description>wind gust icon</description>
 						<left>420</left>
 						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(GustIcon)]</texture>
+						<texture>$INFO[ListItem.Property(WindDirection),weather/wind/gust/,.png]</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -240,12 +242,13 @@
 						<texture>weather/temp/feelslike.png</texture>
 					</control>
 					<control type="image">
+						<description>wind direction icon</description>
 						<left>340</left>
 						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
+						<texture>$INFO[ListItem.Property(WindDirection),weather/wind/average/,.png]</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -260,12 +263,13 @@
 						<textcolor>black</textcolor>
 					</control>
 					<control type="image">
+						<description>wind gust icon</description>
 						<left>420</left>
 						<top>15</top>
 						<width>70</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(GustIcon)]</texture>
+						<texture>$INFO[ListItem.Property(WindDirection),weather/wind/gust/,.png]</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -307,9 +311,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly0.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly0.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly0.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly0.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly0.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly0.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly0.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly0.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly0.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -321,9 +324,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly1.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly1.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly1.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly1.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly1.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly1.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly1.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly1.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly1.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -335,9 +337,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly2.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly2.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly2.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly2.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly2.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly2.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly2.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly2.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly2.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -349,9 +350,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly3.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly3.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly3.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly3.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly3.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly3.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly3.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly3.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly3.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -363,9 +363,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly4.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly4.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly4.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly4.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly4.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly4.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly4.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly4.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly4.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -377,9 +376,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly5.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly5.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly5.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly5.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly5.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly5.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly5.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly5.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly5.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -391,9 +389,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly6.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly6.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly6.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly6.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly6.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly6.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly6.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly6.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly6.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -405,9 +402,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly7.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly7.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly7.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly7.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly7.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly7.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly7.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly7.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly7.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -419,9 +415,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly8.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly8.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly8.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly8.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly8.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly8.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly8.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly8.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly8.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -433,9 +428,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly9.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly9.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly9.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly9.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly9.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly9.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly9.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly9.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly9.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -447,9 +441,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly10.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly10.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly10.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly10.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly10.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly10.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly10.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly10.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly10.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -461,9 +454,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly11.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly11.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly11.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly11.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly11.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly11.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly11.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly11.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly11.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -475,9 +467,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly12.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly12.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly12.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly12.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly12.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly12.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly12.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly12.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly12.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -489,9 +480,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly13.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly13.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly13.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly13.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly13.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly13.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly13.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly13.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly13.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -503,9 +493,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly14.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly14.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly14.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly14.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly14.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly14.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly14.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly14.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly14.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -517,9 +506,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly15.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly15.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly15.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly15.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly15.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly15.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly15.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly15.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly15.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -531,9 +519,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly16.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly16.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly16.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly16.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly16.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly16.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly16.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly16.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly16.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -545,9 +532,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly17.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly17.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly17.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly17.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly17.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly17.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly17.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly17.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly17.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -559,9 +545,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly18.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly18.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly18.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly18.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly18.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly18.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly18.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly18.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly18.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -573,9 +558,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly19.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly19.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly19.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly19.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly19.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly19.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly19.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly19.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly19.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -587,9 +571,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly20.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly20.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly20.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly20.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly20.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly20.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly20.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly20.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly20.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -601,9 +584,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly21.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly21.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly21.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly21.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly21.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly21.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly21.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly21.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly21.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -615,9 +597,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly22.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly22.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly22.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly22.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly22.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly22.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly22.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly22.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly22.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -629,9 +610,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly23.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly23.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly23.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly23.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly23.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly23.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly23.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly23.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly23.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -643,9 +623,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly24.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly24.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly24.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly24.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly24.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly24.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly24.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly24.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly24.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -657,9 +636,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly25.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly25.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly25.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly25.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly25.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly25.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly25.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly25.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly25.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -671,9 +649,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly26.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly26.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly26.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly26.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly26.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly26.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly26.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly26.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly26.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -685,9 +662,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly27.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly27.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly27.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly27.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly27.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly27.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly27.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly27.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly27.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -699,9 +675,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly28.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly28.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly28.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly28.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly28.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly28.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly28.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly28.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly28.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -713,9 +688,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly29.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly29.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly29.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly29.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly29.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly29.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly29.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly29.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly29.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -727,9 +701,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly30.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly30.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly30.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly30.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly30.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly30.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly30.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly30.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly30.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -741,9 +714,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly31.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly31.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly31.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly31.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly31.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly31.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly31.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly31.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly31.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -755,9 +727,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly32.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly32.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly32.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly32.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly32.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly32.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly32.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly32.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly32.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -769,9 +740,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly33.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly33.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly33.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly33.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly33.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly33.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly33.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly33.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly33.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -783,9 +753,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly34.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly34.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly34.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly34.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly34.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly34.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly34.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly34.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly34.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -797,9 +766,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly35.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly35.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly35.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly35.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly35.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly35.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly35.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly35.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly35.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -811,9 +779,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly36.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly36.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly36.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly36.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly36.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly36.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly36.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly36.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly36.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -825,9 +792,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly37.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly37.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly37.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly37.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly37.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly37.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly37.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly37.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly37.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -839,9 +805,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly38.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly38.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly38.WindSpeed)]</property>
-						<property name="WindIcon">weather/wind/average/$INFO[Window.Property(3Hourly38.WindDirection)].png</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly38.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly38.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly38.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly38.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly38.UVIndex)]</property>
 						<onclick>noop</onclick>
@@ -853,9 +818,8 @@
 						<property name="ActualTemp">$INFO[Window.Property(3Hourly39.ActualTemp)]</property>
 						<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly39.FeelsLikeTemp)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(3Hourly39.WindSpeed)]</property>
-						<property name="WindIcon">$INFO[Window.Property(3Hourly39.WindIcon)]</property>
+						<property name="WindDirection">$INFO[Window.Property(3Hourly39.WindDirection)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly39.GustSpeed)]</property>
-						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly39.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly39.Precipitation)]%</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly39.UVIndex)]</property>
 						<onclick>noop</onclick>
