@@ -145,7 +145,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(UVColour),weather/uv/,.png]</texture>
+						<texture>$VAR[UVColour,weather/uv/,.png]</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -285,7 +285,7 @@
 						<width>50</width>
 						<height>50</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(UVColour),weather/uv/,.png]</texture>
+						<texture>$VAR[UVColour,weather/uv/,.png]</texture>
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
@@ -311,7 +311,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly0.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly0.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly0.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly0.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly0.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly0.Day))</visible>
@@ -326,7 +325,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly1.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly1.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly1.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly1.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly1.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly1.Day))</visible>
@@ -341,7 +339,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly2.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly2.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly2.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly2.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly2.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly2.Day))</visible>
@@ -356,7 +353,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly3.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly3.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly3.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly3.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly3.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly3.Day))</visible>
@@ -371,7 +367,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly4.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly4.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly4.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly4.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly4.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly4.Day))</visible>
@@ -386,7 +381,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly5.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly5.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly5.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly5.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly5.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly5.Day))</visible>
@@ -401,7 +395,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly6.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly6.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly6.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly6.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly6.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly6.Day))</visible>
@@ -416,7 +409,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly7.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly7.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly7.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly7.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly7.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly7.Day))</visible>
@@ -431,7 +423,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly8.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly8.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly8.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly8.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly8.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly8.Day))</visible>
@@ -446,7 +437,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly9.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly9.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly9.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly9.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly9.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly9.Day))</visible>
@@ -461,7 +451,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly10.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly10.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly10.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly10.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly10.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly10.Day))</visible>
@@ -476,7 +465,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly11.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly11.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly11.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly11.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly11.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly11.Day))</visible>
@@ -491,7 +479,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly12.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly12.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly12.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly12.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly12.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly12.Day))</visible>
@@ -506,7 +493,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly13.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly13.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly13.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly13.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly13.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly13.Day))</visible>
@@ -521,7 +507,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly14.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly14.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly14.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly14.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly14.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly14.Day))</visible>
@@ -536,7 +521,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly15.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly15.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly15.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly15.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly15.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly15.Day))</visible>
@@ -551,7 +535,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly16.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly16.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly16.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly16.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly16.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly16.Day))</visible>
@@ -566,7 +549,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly17.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly17.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly17.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly17.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly17.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly17.Day))</visible>
@@ -581,7 +563,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly18.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly18.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly18.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly18.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly18.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly18.Day))</visible>
@@ -596,7 +577,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly19.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly19.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly19.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly19.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly19.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly19.Day))</visible>
@@ -611,7 +591,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly20.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly20.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly20.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly20.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly20.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly20.Day))</visible>
@@ -626,7 +605,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly21.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly21.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly21.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly21.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly21.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly21.Day))</visible>
@@ -641,7 +619,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly22.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly22.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly22.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly22.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly22.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly22.Day))</visible>
@@ -656,7 +633,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly23.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly23.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly23.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly23.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly23.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly23.Day))</visible>
@@ -671,7 +647,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly24.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly24.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly24.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly24.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly24.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly24.Day))</visible>
@@ -686,7 +661,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly25.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly25.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly25.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly25.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly25.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly25.Day))</visible>
@@ -701,7 +675,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly26.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly26.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly26.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly26.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly26.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly26.Day))</visible>
@@ -716,7 +689,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly27.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly27.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly27.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly27.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly27.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly27.Day))</visible>
@@ -731,7 +703,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly28.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly28.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly28.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly28.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly28.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly28.Day))</visible>
@@ -746,7 +717,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly29.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly29.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly29.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly29.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly29.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly29.Day))</visible>
@@ -761,7 +731,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly30.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly30.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly30.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly30.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly30.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly30.Day))</visible>
@@ -776,7 +745,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly31.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly31.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly31.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly31.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly31.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly31.Day))</visible>
@@ -791,7 +759,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly32.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly32.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly32.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly32.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly32.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly32.Day))</visible>
@@ -806,7 +773,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly33.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly33.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly33.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly33.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly33.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly33.Day))</visible>
@@ -821,7 +787,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly34.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly34.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly34.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly34.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly34.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly34.Day))</visible>
@@ -836,7 +801,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly35.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly35.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly35.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly35.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly35.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly35.Day))</visible>
@@ -851,7 +815,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly36.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly36.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly36.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly36.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly36.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly36.Day))</visible>
@@ -866,7 +829,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly37.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly37.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly37.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly37.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly37.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly37.Day))</visible>
@@ -881,7 +843,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly38.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly38.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly38.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly38.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly38.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly38.Day))</visible>
@@ -896,7 +857,6 @@
 						<property name="GustSpeed">$INFO[Window.Property(3Hourly39.GustSpeed)]</property>
 						<property name="GustIcon">weather/wind/gust/$INFO[Window.Property(3Hourly39.WindDirection)].png</property>
 						<property name="Precipitation">$INFO[Window.Property(3Hourly39.Precipitation)]%</property>
-						<property name="UVColour">$INFO[Window.Property(3Hourly39.UVColour)]</property>
 						<property name="UVIndex">$INFO[Window.Property(3Hourly39.UVIndex)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(3Hourly39.Day))</visible>
@@ -947,4 +907,18 @@
 			</control>
 		</control>
 	</include>
+	<variable name="UVColour">
+		<value condition="StringCompare(ListItem.Property(UVIndex),1) |
+			StringCompare(ListItem.Property(UVIndex),2)">green</value>
+		<value condition="StringCompare(ListItem.Property(UVIndex),3) |
+			StringCompare(ListItem.Property(UVIndex),4) |
+			StringCompare(ListItem.Property(UVIndex),5)">yellow</value>
+		<value condition="StringCompare(ListItem.Property(UVIndex),6) |
+			StringCompare(ListItem.Property(UVIndex),7)">red</value>
+		<value condition="StringCompare(ListItem.Property(UVIndex),8) |
+			StringCompare(ListItem.Property(UVIndex),9) |
+			StringCompare(ListItem.Property(UVIndex),10) |
+			StringCompare(ListItem.Property(UVIndex),11)">purple</value>
+		<value>grey</value>
+	</variable>
 </includes>
