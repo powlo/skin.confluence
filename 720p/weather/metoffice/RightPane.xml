@@ -30,6 +30,7 @@
 			<include>MetOfficeRegionalForcast</include>
 			<include>MetOfficeDailyForcast</include>
 			<include>MetOffice3HourlyForcast</include>
+			<include>MetOfficeForecastMap</include>
 			</control>
 		</control>
 	</include>
