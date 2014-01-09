@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="MetOfficeRightPane">
+		<control type="group">
+			<left>580</left>
+			<top>40</top>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>650</width>
+				<height>620</height>
+				<texture border="20">ContentPanel.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>612</top>
+				<width>650</width>
+				<height>64</height>
+				<texture border="10">ContentPanelMirror.png</texture>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>5</top>
+				<width>610</width>
+				<height>60</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassTitleBar.png</texture>
+			</control>
+			<control type="group" id="50">
+			<include>MetOfficeRegionalForcast</include>
+			<include>MetOfficeDailyForcast</include>
+			<include>MetOffice3HourlyForcast</include>
+			<include>MetOfficeForecastMap</include>
+			</control>
+		</control>
+	</include>
+</includes>
