@@ -45,7 +45,15 @@
 			    <onfocus>RunScript(weather.metoffice, 3HourlyForecast)</onfocus>
 			    <onfocus>SetProperty(Weather.CurrentView,3hourly)</onfocus>
 			</control>
-			<control type="label" id="305">
+			<control type="button" id="305">
+			    <description>Forecast Map button</description>
+			    <textwidth>235</textwidth>
+			    <include>ButtonCommonValues</include>
+			    <label>31906</label>
+			    <onfocus>RunScript(weather.metoffice, ForecastMap)</onfocus>
+			    <onfocus>SetProperty(Weather.CurrentView,maps)</onfocus>
+			</control>
+			<control type="label" id="306">
 				<width>250</width>
 				<height>35</height>
 				<font>font12</font>

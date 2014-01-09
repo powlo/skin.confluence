@@ -19,7 +19,9 @@
 	<include file="weather\metoffice\RegionalForecast.xml" />
 	<include file="weather\metoffice\DailyForecast.xml" />
 	<include file="weather\metoffice\3HourlyForecast.xml" />
+	<include file="weather\metoffice\ForecastMap.xml" />
 	<include file="weather\metoffice\SideBladeContents.xml" />
+	<include file="weather\metoffice\TimestepSlider.xml" />
 	<include file="weather\wunderground\RightPane.xml" />
 	<include file="weather\wunderground\10DayForecast.xml" />
 	<include file="weather\wunderground\36HourForecast.xml" />
