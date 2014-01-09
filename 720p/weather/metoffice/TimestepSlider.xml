@@ -2,16 +2,16 @@
 <includes>
 	<include name="TimestepSlider">
 		<control type="image">
-			<left>100</left>
-			<top>570</top>
+			<posx>100</posx>
+			<posy>570</posy>
 			<width>375</width>
 			<height>40</height>
 			<texture border="14,0,14,0">ScrollBarH.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 0</description>
-		      <left>100</left>
-		      <top>570</top>
+		      <posx>100</posx>
+		      <posy>570</posy>
 		      <width>28</width>
 		      <height>40</height>
               <texturefocus></texturefocus>
@@ -21,16 +21,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 0)</visible>
-			<left>100</left>
-			<top>570</top>
+			<posx>100</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 1</description>
-		      <left>128</left>
-		      <top>570</top>
+		      <posx>128</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
               <texturefocus></texturefocus>
@@ -40,16 +40,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 1)</visible>
-			<left>128</left>
-			<top>570</top>
+			<posx>128</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 2</description>
-		      <left>157</left>
-		      <top>570</top>
+		      <posx>157</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
               <texturefocus></texturefocus>
@@ -59,16 +59,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 2)</visible>
-			<left>157</left>
-			<top>570</top>
+			<posx>157</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 3</description>
-		      <left>186</left>
-		      <top>570</top>
+		      <posx>186</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
               <texturefocus></texturefocus>
@@ -78,16 +78,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 3)</visible>
-			<left>186</left>
-			<top>570</top>
+			<posx>186</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 4</description>
-		      <left>215</left>
-		      <top>570</top>
+		      <posx>215</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -97,16 +97,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 4)</visible>
-			<left>215</left>
-			<top>570</top>
+			<posx>215</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 5</description>
-		      <left>244</left>
-		      <top>570</top>
+		      <posx>244</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -116,16 +116,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 5)</visible>
-			<left>244</left>
-			<top>570</top>
+			<posx>244</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 6</description>
-		      <left>273</left>
-		      <top>570</top>
+		      <posx>273</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -135,16 +135,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 6)</visible>
-			<left>273</left>
-			<top>570</top>
+			<posx>273</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 7</description>
-		      <left>302</left>
-		      <top>570</top>
+		      <posx>302</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -154,16 +154,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 7)</visible>
-			<left>302</left>
-			<top>570</top>
+			<posx>302</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 8</description>
-		      <left>331</left>
-		      <top>570</top>
+		      <posx>331</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -173,16 +173,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 8)</visible>
-			<left>331</left>
-			<top>570</top>
+			<posx>331</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 9</description>
-		      <left>360</left>
-		      <top>570</top>
+		      <posx>360</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -192,16 +192,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 9)</visible>
-			<left>360</left>
-			<top>570</top>
+			<posx>360</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 10</description>
-		      <left>389</left>
-		      <top>570</top>
+		      <posx>389</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -211,16 +211,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 10)</visible>
-			<left>389</left>
-			<top>570</top>
+			<posx>389</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 11</description>
-		      <left>418</left>
-		      <top>570</top>
+		      <posx>418</posx>
+		      <posy>570</posy>
 		      <width>29</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -230,16 +230,16 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 11)</visible>
-			<left>418</left>
-			<top>570</top>
+			<posx>418</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>
 		</control>
 		<control type="button">
 		      <description>Timestep 12</description>
-		      <left>447</left>
-		      <top>570</top>
+		      <posx>447</posx>
+		      <posy>570</posy>
 		      <width>28</width>
 		      <height>40</height>
 			  <texturefocus></texturefocus>
@@ -249,8 +249,8 @@
 		</control>
 		<control type="image">
 			<visible>StringCompare(Window.Property(Weather.SliderPosition), 12)</visible>
-			<left>447</left>
-			<top>570</top>
+			<posx>447</posx>
+			<posy>570</posy>
 			<width>28</width>
 			<height>40</height>
 			<texture>ScrollBarH_bar_focus.png</texture>

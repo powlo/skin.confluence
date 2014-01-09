@@ -6,8 +6,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>13</top>
+				<posx>20</posx>
+				<posy>13</posy>
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
@@ -19,20 +19,20 @@
 			</control>
 			<control type="button" id="51">
 			      <description>hidden button</description>
-			      <left>-900</left>
-			      <top>0</top>
+			      <posx>-900</posx>
+			      <posy>0</posy>
 			      <onleft>9000</onleft>
 			</control>
 			<control type="image">
-				<left>100</left>
-				<top>70</top>
+				<posx>100</posx>
+				<posy>70</posy>
 				<width>375</width>
 				<height>500</height>
 				<texture>$INFO[Window.Property(Weather.MapSurfaceFile)]</texture>
 			</control>
 			<control type="image">
-				<left>100</left>
-				<top>70</top>
+				<posx>100</posx>
+				<posy>70</posy>
 				<width>375</width>
 				<height>500</height>
 				<bordersize>15</bordersize>
