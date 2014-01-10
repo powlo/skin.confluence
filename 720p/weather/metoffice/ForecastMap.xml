@@ -24,18 +24,38 @@
 			      <onleft>9000</onleft>
 			</control>
 			<control type="image">
-				<left>100</left>
-				<top>70</top>
-				<width>375</width>
-				<height>500</height>
+				<left>120</left>
+				<top>90</top>
+				<width>337</width>
+				<height>450</height>
 				<texture>$INFO[Window.Property(Weather.MapSurfaceFile)]</texture>
 			</control>
 			<control type="image">
-				<left>100</left>
-				<top>70</top>
-				<width>375</width>
-				<height>500</height>
+				<left>120</left>
+				<top>90</top>
+				<width>337</width>
+				<height>450</height>
 				<texture>$INFO[Window.Property(Weather.MapLayerFile)]</texture>
+			</control>
+			<control type="image">
+				<left>345</left>
+				<top>100</top>
+				<width>100</width>
+				<height>30</height>
+				<texture>floor_button.png</texture>
+			</control>
+			<control type="label">
+				<description>Shows time for selected timestep</description>
+				<left>345</left>
+				<top>100</top>
+				<width>100</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>$INFO[Window.Property(Weather.MapTime)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>
 			<include>TimestepSlider</include>
 		</control>
