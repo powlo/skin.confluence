@@ -35,7 +35,6 @@
 				<posy>70</posy>
 				<width>375</width>
 				<height>500</height>
-				<bordersize>15</bordersize>
 				<texture>$INFO[Window.Property(Weather.MapLayerFile)]</texture>
 			</control>
 			<include>TimestepSlider</include>
