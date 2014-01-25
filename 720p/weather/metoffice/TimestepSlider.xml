@@ -34,11 +34,11 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
-							<visible>StringCompare(Window.Property(Weather.SliderPosition), 0)+Control.HasFocus(2000)</visible>
+							<visible>[StringCompare(Window.Property(Weather.SliderPosition), 0)|IsEmpty(Window.Property(Weather.SliderPosition))]+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
-							<visible>StringCompare(Window.Property(Weather.SliderPosition), 0)+!Control.HasFocus(2000)</visible>
+							<visible>[StringCompare(Window.Property(Weather.SliderPosition), 0)|IsEmpty(Window.Property(Weather.SliderPosition))]+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
