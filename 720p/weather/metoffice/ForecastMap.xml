@@ -80,6 +80,10 @@
 							<control type="image">
 								<texture>weather/icons/rain.png</texture>
 							</control>
+							<control type="image">
+								<visible>StringCompare(Window.Property(Weather.LayerSelection), Rainfall)|IsEmpty(Skin.String(Weather.LayerSelection))</visible>
+								<texture>button-focus2.png</texture>
+							</control>
 							<control type="button">
 							      <description>Rain Overlay Button</description>
 							      <width>50</width>
@@ -95,6 +99,10 @@
 							<height>50</height>
 							<control type="image">
 								<texture>weather/icons/cloudrain.png</texture>
+							</control>
+							<control type="image">
+								<visible>StringCompare(Window.Property(Weather.LayerSelection), CloudAndRain)</visible>
+								<texture>button-focus2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Cloud And Rain Overlay Button</description>
@@ -112,6 +120,10 @@
 							<control type="image">
 								<texture>weather/icons/cloud.png</texture>
 							</control>
+							<control type="image">
+								<visible>StringCompare(Window.Property(Weather.LayerSelection), Cloud)</visible>
+								<texture>button-focus2.png</texture>
+							</control>
 							<control type="button">
 							      <description>Cloud Overlay Button</description>
 							      <width>50</width>
@@ -128,6 +140,10 @@
 							<control type="image">
 								<texture>weather/icons/temperature.png</texture>
 							</control>
+							<control type="image">
+								<visible>StringCompare(Window.Property(Weather.LayerSelection), Temperature)</visible>
+								<texture>button-focus2.png</texture>
+							</control>
 							<control type="button">
 							      <description>Temperature Overlay Button</description>
 							      <width>50</width>
@@ -143,6 +159,10 @@
 							<height>50</height>
 							<control type="image">
 								<texture>weather/icons/pressure.png</texture>
+							</control>
+							<control type="image">
+								<visible>StringCompare(Window.Property(Weather.LayerSelection), Pressure)</visible>
+								<texture>button-focus2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Pressure Overlay Button</description>
