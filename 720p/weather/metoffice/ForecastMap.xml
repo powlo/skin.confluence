@@ -81,7 +81,7 @@
 								<texture>weather/icons/rain.png</texture>
 							</control>
 							<control type="image">
-								<visible>StringCompare(Window.Property(Weather.LayerSelection), Rainfall)|IsEmpty(Skin.String(Weather.LayerSelection))</visible>
+								<visible>StringCompare(Window.Property(Weather.LayerSelection), Rainfall)|IsEmpty(Window.Property(Weather.LayerSelection))</visible>
 								<texture>button-focus2.png</texture>
 							</control>
 							<control type="button">
