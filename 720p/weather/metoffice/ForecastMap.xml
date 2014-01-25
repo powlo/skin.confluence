@@ -74,86 +74,85 @@
 						<height>500</height>
 						<orientation>vertical</orientation>
 						<itemgap>10</itemgap>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
+						<control type="group">
 							<width>50</width>
 							<height>50</height>
-							<texture>weather/icons/cloudrain.png</texture>
+							<control type="image">
+								<texture>weather/icons/rain.png</texture>
+							</control>
+							<control type="button">
+							      <description>Rain Overlay Button</description>
+							      <width>50</width>
+							      <height>50</height>
+					              <texturefocus>button-focus.png</texturefocus>
+					              <texturenofocus>button-nofocus.png</texturenofocus>
+					              <onclick>SetProperty(Weather.LayerSelection, Rainfall)</onclick>
+								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+							</control>
 						</control>
-						<control type="image">
+						<control type="group">
 							<width>50</width>
 							<height>50</height>
-							<texture>weather/icons/cloud.png</texture>
+							<control type="image">
+								<texture>weather/icons/cloudrain.png</texture>
+							</control>
+							<control type="button">
+							      <description>Cloud And Rain Overlay Button</description>
+							      <width>50</width>
+							      <height>50</height>
+					              <texturefocus>button-focus.png</texturefocus>
+					              <texturenofocus>button-nofocus.png</texturenofocus>
+					              <onclick>SetProperty(Weather.LayerSelection, CloudAndRain)</onclick>
+								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+							</control>
 						</control>
-						<control type="image">
+						<control type="group">
 							<width>50</width>
 							<height>50</height>
-							<texture>weather/icons/rain.png</texture>
+							<control type="image">
+								<texture>weather/icons/cloud.png</texture>
+							</control>
+							<control type="button">
+							      <description>Cloud Overlay Button</description>
+							      <width>50</width>
+							      <height>50</height>
+					              <texturefocus>button-focus.png</texturefocus>
+					              <texturenofocus>button-nofocus.png</texturenofocus>
+					              <onclick>SetProperty(Weather.LayerSelection, Cloud)</onclick>
+								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+							</control>
 						</control>
-						<control type="image">
+						<control type="group">
 							<width>50</width>
 							<height>50</height>
-							<texture>weather/icons/temperature.png</texture>
+							<control type="image">
+								<texture>weather/icons/temperature.png</texture>
+							</control>
+							<control type="button">
+							      <description>Temperature Overlay Button</description>
+							      <width>50</width>
+							      <height>50</height>
+					              <texturefocus>button-focus.png</texturefocus>
+					              <texturenofocus>button-nofocus.png</texturenofocus>
+					              <onclick>SetProperty(Weather.LayerSelection, Temperature)</onclick>
+								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+							</control>
 						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
+						<control type="group">
 							<width>50</width>
 							<height>50</height>
-							<texture>weather/icons/pressure.png</texture>
-						</control>
-					</control>
-					<control type="grouplist">
-						<description>Grouping of map overlay buttons</description>
-						<width>100</width>
-						<height>500</height>
-						<orientation>vertical</orientation>
-						<itemgap>10</itemgap>
-						<control type="button">
-						      <description>CloudAndRain Overlay Button</description>
-						      <width>50</width>
-						      <height>50</height>
-				              <texturefocus>button-focus.png</texturefocus>
-				              <texturenofocus>button-nofocus.png</texturenofocus>
-				              <onclick>SetProperty(Weather.LayerSelection, CloudAndRain)</onclick>
-							  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-						</control>
-						<control type="button">
-						      <description>Cloud Overlay Button</description>
-						      <width>50</width>
-						      <height>50</height>
-				              <texturefocus>button-focus.png</texturefocus>
-				              <texturenofocus>button-nofocus.png</texturenofocus>
-				              <onclick>SetProperty(Weather.LayerSelection, Cloud)</onclick>
-							  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-						</control>
-						<control type="button">
-						      <description>Rainfall Overlay Button</description>
-						      <width>50</width>
-						      <height>50</height>
-				              <texturefocus>button-focus.png</texturefocus>
-				              <texturenofocus>button-nofocus.png</texturenofocus>
-				              <onclick>SetProperty(Weather.LayerSelection, Rainfall)</onclick>
-							  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-						</control>
-						<control type="button">
-						      <description>Temperature Overlay Button</description>
-						      <width>50</width>
-						      <height>50</height>
-				              <texturefocus>button-focus.png</texturefocus>
-				              <texturenofocus>button-nofocus.png</texturenofocus>
-				              <onclick>SetProperty(Weather.LayerSelection, Temperature)</onclick>
-							  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-						</control>
-						<control type="button">
-						      <description>Pressure Overlay Button</description>
-						      <width>50</width>
-						      <height>50</height>
-				              <texturefocus>button-focus.png</texturefocus>
-				              <texturenofocus>button-nofocus.png</texturenofocus>
-				              <onclick>SetProperty(Weather.LayerSelection, Pressure)</onclick>
-							  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+							<control type="image">
+								<texture>weather/icons/pressure.png</texture>
+							</control>
+							<control type="button">
+							      <description>Pressure Overlay Button</description>
+							      <width>50</width>
+							      <height>50</height>
+					              <texturefocus>button-focus.png</texturefocus>
+					              <texturenofocus>button-nofocus.png</texturenofocus>
+					              <onclick>SetProperty(Weather.LayerSelection, Pressure)</onclick>
+								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+							</control>
 						</control>
 					</control>
 				</control>
