@@ -82,7 +82,7 @@
 							</control>
 							<control type="image">
 								<visible>StringCompare(Window.Property(Weather.LayerSelection), Rainfall)|IsEmpty(Window.Property(Weather.LayerSelection))</visible>
-								<texture>button-focus2.png</texture>
+								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Rain Overlay Button</description>
@@ -102,7 +102,7 @@
 							</control>
 							<control type="image">
 								<visible>StringCompare(Window.Property(Weather.LayerSelection), CloudAndRain)</visible>
-								<texture>button-focus2.png</texture>
+								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Cloud And Rain Overlay Button</description>
@@ -122,7 +122,7 @@
 							</control>
 							<control type="image">
 								<visible>StringCompare(Window.Property(Weather.LayerSelection), Cloud)</visible>
-								<texture>button-focus2.png</texture>
+								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Cloud Overlay Button</description>
@@ -142,7 +142,7 @@
 							</control>
 							<control type="image">
 								<visible>StringCompare(Window.Property(Weather.LayerSelection), Temperature)</visible>
-								<texture>button-focus2.png</texture>
+								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Temperature Overlay Button</description>
@@ -162,7 +162,7 @@
 							</control>
 							<control type="image">
 								<visible>StringCompare(Window.Property(Weather.LayerSelection), Pressure)</visible>
-								<texture>button-focus2.png</texture>
+								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
 							      <description>Pressure Overlay Button</description>
