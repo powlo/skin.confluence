@@ -34,10 +34,10 @@
 					<width>325</width>
 					<height>434</height>
 					<control type="image">
-						<texture>$INFO[Window.Property(Weather.MapSurfaceFile)]</texture>
+						<texture>$INFO[Window.Property(ForecastMap.Surface)]</texture>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window.Property(Weather.MapLayerFile)]</texture>
+						<texture>$INFO[Window.Property(ForecastMap.Layer)]</texture>
 					</control>
 					<control type="group">
 						<right>10</right>
@@ -50,7 +50,7 @@
 						<control type="label">
 							<description>Shows time for selected timestep</description>
 							<font>font13_title</font>
-							<label>$INFO[Window.Property(Weather.MapTime)]</label>
+							<label>$INFO[Window.Property(ForecastMap.MapTime)]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
@@ -81,7 +81,7 @@
 								<texture>weather/icons/rain.png</texture>
 							</control>
 							<control type="image">
-								<visible>StringCompare(Window.Property(Weather.LayerSelection), Rainfall)|IsEmpty(Window.Property(Weather.LayerSelection))</visible>
+								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ForecastMap.LayerSelection))</visible>
 								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
@@ -90,7 +90,7 @@
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
 					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(Weather.LayerSelection, Rainfall)</onclick>
+					              <onclick>SetProperty(ForecastMap.LayerSelection, Rainfall)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 							</control>
 						</control>
@@ -101,7 +101,7 @@
 								<texture>weather/icons/cloudrain.png</texture>
 							</control>
 							<control type="image">
-								<visible>StringCompare(Window.Property(Weather.LayerSelection), CloudAndRain)</visible>
+								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)</visible>
 								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
@@ -110,7 +110,7 @@
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
 					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(Weather.LayerSelection, CloudAndRain)</onclick>
+					              <onclick>SetProperty(ForecastMap.LayerSelection, CloudAndRain)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 							</control>
 						</control>
@@ -121,7 +121,7 @@
 								<texture>weather/icons/cloud.png</texture>
 							</control>
 							<control type="image">
-								<visible>StringCompare(Window.Property(Weather.LayerSelection), Cloud)</visible>
+								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Cloud)</visible>
 								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
@@ -130,7 +130,7 @@
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
 					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(Weather.LayerSelection, Cloud)</onclick>
+					              <onclick>SetProperty(ForecastMap.LayerSelection, Cloud)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 							</control>
 						</control>
@@ -141,7 +141,7 @@
 								<texture>weather/icons/temperature.png</texture>
 							</control>
 							<control type="image">
-								<visible>StringCompare(Window.Property(Weather.LayerSelection), Temperature)</visible>
+								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
 								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
@@ -150,7 +150,7 @@
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
 					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(Weather.LayerSelection, Temperature)</onclick>
+					              <onclick>SetProperty(ForecastMap.LayerSelection, Temperature)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 							</control>
 						</control>
@@ -161,7 +161,7 @@
 								<texture>weather/icons/pressure.png</texture>
 							</control>
 							<control type="image">
-								<visible>StringCompare(Window.Property(Weather.LayerSelection), Pressure)</visible>
+								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Pressure)</visible>
 								<texture>black-back2.png</texture>
 							</control>
 							<control type="button">
@@ -170,7 +170,7 @@
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
 					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(Weather.LayerSelection, Pressure)</onclick>
+					              <onclick>SetProperty(ForecastMap.LayerSelection, Pressure)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 							</control>
 						</control>
