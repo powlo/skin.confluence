@@ -256,7 +256,7 @@
 				<height>35</height>
 				<font>font10</font>
 				<textcolor>white</textcolor>
-				<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(HourlyObservation.IssuedAt)][/COLOR]</label>
+				<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(DailyForecast.IssuedAt)][/COLOR]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<textcolor>grey2</textcolor>
