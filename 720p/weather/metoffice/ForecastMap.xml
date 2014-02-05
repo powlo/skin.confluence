@@ -39,6 +39,9 @@
 					<control type="image">
 						<texture>$INFO[Window.Property(ForecastMap.Layer)]</texture>
 					</control>
+					<control type="image">
+						<texture>$INFO[Window.Property(ForecastMap.Marker)]</texture>
+					</control>
 					<control type="group">
 						<posx>215</posx>
 						<posy>10</posy>
