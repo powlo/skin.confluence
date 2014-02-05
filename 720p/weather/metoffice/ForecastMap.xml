@@ -6,8 +6,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>13</top>
+				<posx>20</posx>
+				<posy>13</posy>
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
@@ -19,18 +19,18 @@
 			</control>
 			<control type="button" id="51">
 			      <description>hidden button</description>
-			      <left>-900</left>
-			      <top>0</top>
+			      <posx>-900</posx>
+			      <posy>0</posy>
 			      <onleft>9000</onleft>
 			</control>
 			<control type="group">
-				<left>120</left>
-				<top>90</top>
+				<posx>120</posx>
+				<posy>90</posy>
 				<width>480</width>
 				<height>494</height>
 				<control type="group">
-					<left>10</left>
-					<top>0</top>
+					<posx>10</posx>
+					<posy>0</posy>
 					<width>325</width>
 					<height>434</height>
 					<control type="image">
@@ -40,14 +40,16 @@
 						<texture>$INFO[Window.Property(ForecastMap.Layer)]</texture>
 					</control>
 					<control type="group">
-						<right>10</right>
-						<top>10</top>
+						<posx>215</posx>
+						<posy>10</posy>
 						<width>100</width>
 						<height>30</height>
 						<control type="image">
 							<texture>floor_button.png</texture>
 						</control>
 						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
 							<description>Shows time for selected timestep</description>
 							<font>font13_title</font>
 							<label>$INFO[Window.Property(ForecastMap.MapTime)]</label>
@@ -59,13 +61,13 @@
 					</control>
 				</control>
 				<control type="group">
-					<left>0</left>
-					<top>435</top>
+					<posx>0</posx>
+					<posy>435</posy>
 					<include>TimestepSlider</include>
 				</control>
 				<control type="group">
 					<right>0</right>
-					<top>0</top>
+					<posy>0</posy>
 					<width>100</width>
 					<height>500</height>
 					<control type="grouplist">
@@ -86,6 +88,8 @@
 							</control>
 							<control type="button">
 							      <description>Rain Overlay Button</description>
+							      <posx>0</posx>
+							      <posy>0</posy>
 							      <width>50</width>
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
@@ -106,6 +110,8 @@
 							</control>
 							<control type="button">
 							      <description>Cloud And Rain Overlay Button</description>
+							      <posx>0</posx>
+							      <posy>0</posy>
 							      <width>50</width>
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
@@ -126,6 +132,8 @@
 							</control>
 							<control type="button">
 							      <description>Cloud Overlay Button</description>
+							      <posx>0</posx>
+							      <posy>0</posy>
 							      <width>50</width>
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
@@ -146,6 +154,8 @@
 							</control>
 							<control type="button">
 							      <description>Temperature Overlay Button</description>
+							      <posx>0</posx>
+							      <posy>0</posy>
 							      <width>50</width>
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
@@ -166,6 +176,8 @@
 							</control>
 							<control type="button">
 							      <description>Pressure Overlay Button</description>
+							      <posx>0</posx>
+							      <posy>0</posy>
 							      <width>50</width>
 							      <height>50</height>
 					              <texturefocus>button-focus.png</texturefocus>
@@ -179,8 +191,8 @@
 			</control>
 			<control type="label">
 				<description>issued at label</description>
-				<left>360</left>
-				<top>580</top>
+				<posx>620</posx>
+				<posy>580</posy>
 				<width>260</width>
 				<height>35</height>
 				<font>font10</font>
