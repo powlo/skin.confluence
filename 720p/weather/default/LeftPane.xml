@@ -90,7 +90,7 @@
 				</control>
 				<control type="label">
 					<description>current temp Value</description>
-					<right>195</right>
+					<posx>195</posx>
 					<posy>185</posy>
 					<width>180</width>
 					<height>40</height>
@@ -147,7 +147,7 @@
 			</control>
 			<control type="label">
 				<description>current feels like label</description>
-				<right>170</right>
+				<posx>170</posx>
 				<posy>400</posy>
 				<width>170</width>
 				<height>35</height>
@@ -160,7 +160,7 @@
 			</control>
 			<control type="label">
 				<description>current dew label</description>
-				<right>170</right>
+				<posx>170</posx>
 				<posy>430</posy>
 				<width>170</width>
 				<height>35</height>
@@ -173,7 +173,7 @@
 			</control>
 			<control type="label">
 				<description>current humidity label</description>
-				<right>170</right>
+				<posx>170</posx>
 				<posy>460</posy>
 				<width>170</width>
 				<height>35</height>
@@ -186,7 +186,7 @@
 			</control>
 			<control type="label">
 				<description>current UV Index label</description>
-				<right>170</right>
+				<posx>170</posx>
 				<posy>490</posy>
 				<width>170</width>
 				<height>35</height>
@@ -199,7 +199,7 @@
 			</control>
 			<control type="label">
 				<description>current Wind label</description>
-				<right>170</right>
+				<posx>170</posx>
 				<posy>520</posy>
 				<width>170</width>
 				<height>35</height>
@@ -292,7 +292,7 @@
 				</control>
 				<control type="label">
 					<description>Sunset label</description>
-					<right>470</right>
+					<posx>470</posx>
 					<posy>570</posy>
 					<width>300</width>
 					<height>35</height>
