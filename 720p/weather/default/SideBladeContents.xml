@@ -3,7 +3,7 @@
 	<include name="DefaultSideBladeContents">
 		<control type="grouplist" id="9000">
 			<posx>0</posx>
-			<posy>60</posy>
+			<posy>110</posy>
 			<width>250</width>
 			<height>650</height>
 			<onleft>9000</onleft>
