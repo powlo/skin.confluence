@@ -9,15 +9,17 @@
 				<posy>0</posy>
 				<width>345</width>
 				<height>60</height>
-				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 			</control>
 			<control type="group">
-				<posx>10</posx>
-				<posy>10</posy>
-				<width>325</width>
-				<height>40</height>
+				<width>345</width>
+				<height>80</height>
 				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>325</width>
+					<height>40</height>
 					<texture border="14,0,14,0">ScrollBarH.png</texture>
 				</control>
 				<control type="grouplist">
@@ -25,33 +27,45 @@
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
-							<texturenofocus border="14,0,14,0"></texturenofocus>
-							<texturefocus border="14,0,14,0"></texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 							<onclick>SetProperty(ForecastMap.SliderPosition, 0)</onclick>
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>[StringCompare(Window.Property(ForecastMap.SliderPosition), 0)|IsEmpty(Window.Property(ForecastMap.SliderPosition))]+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>[StringCompare(Window.Property(ForecastMap.SliderPosition), 0)|IsEmpty(Window.Property(ForecastMap.SliderPosition))]+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -60,20 +74,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 1)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 1)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -82,20 +106,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 2)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 2)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -104,20 +138,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 3)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 3)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -126,20 +170,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 4)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 4)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -148,20 +202,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 5)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 5)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -170,20 +234,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 6)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 6)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -192,20 +266,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 7)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
-						<control type="image">				
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 7)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -214,20 +298,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 8)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 8)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -236,20 +330,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 9)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 9)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -258,20 +362,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 10)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 10)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -280,20 +394,30 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 11)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 11)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
 					</control>
 					<control type="group">
+						<posx>10</posx>
+						<posy>10</posy>
 						<width>25</width>
-						<height>40</height>
+						<height>60</height>
 						<control type="button">
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>25</width>
 							<height>40</height>
 							<texturenofocus border="14,0,14,0"></texturenofocus>
@@ -302,10 +426,18 @@
 							<onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 12)+Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar_focus.png</texture>
 						</control>
 						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>25</width>
+							<height>40</height>
 							<visible>StringCompare(Window.Property(ForecastMap.SliderPosition), 12)+!Control.HasFocus(2000)</visible>
 							<texture>ScrollBarH_bar.png</texture>
 						</control>
