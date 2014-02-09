@@ -353,7 +353,7 @@ msgstr ""
 
 #for weather.metoffice...
 msgctxt "#31302"
-msgid "Issued At"
+msgid "Issued"
 msgstr ""
 
 msgctxt "#31303"
