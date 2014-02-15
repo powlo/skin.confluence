@@ -2,7 +2,7 @@
 <includes>
 	<include name="MetOfficeDailyForcast">
 		<control type="group">
-			<visible>IsEmpty(Window.Property(Weather.CurrentView))</visible>
+			<visible>IsEmpty(Window.Property(Weather.CurrentView))+!IsEmpty(Window.Property(DailyForecast.IsFetched))</visible>
 			<control type="label">
 				<description>header label</description>
 				<posx>20</posx>

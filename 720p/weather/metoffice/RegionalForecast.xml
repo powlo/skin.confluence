@@ -2,7 +2,7 @@
 <includes>
 	<include name="MetOfficeRegionalForcast">
 		<control type="group">
-			<visible>StringCompare(Window.Property(Weather.CurrentView),regional)</visible>
+			<visible>StringCompare(Window.Property(Weather.CurrentView),regional)+!IsEmpty(Window.Property(RegionalForecast.IsFetched))</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
