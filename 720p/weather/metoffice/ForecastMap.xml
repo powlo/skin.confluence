@@ -17,12 +17,6 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="button" id="51">
-			      <description>hidden button</description>
-			      <posx>-900</posx>
-			      <posy>0</posy>
-			      <onleft>9000</onleft>
-			</control>
 			<control type="group">
 				<posx>120</posx>
 				<posy>90</posy>
@@ -101,7 +95,7 @@
 								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ForecastMap.LayerSelection))</visible>
 								<texture>black-back2.png</texture>
 							</control>
-							<control type="button">
+							<control type="button" id="2001">
 							      <description>Rain Overlay Button</description>
 							      <posx>0</posx>
 							      <posy>0</posy>
@@ -111,6 +105,10 @@
 					              <texturenofocus>button-nofocus.png</texturenofocus>
 					              <onclick>SetProperty(ForecastMap.LayerSelection, Rainfall)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+								  <onleft>9000</onleft>
+								  <onright>9000</onright>
+								  <onup>2000</onup>
+								  <ondown>2002</ondown>
 							</control>
 						</control>
 						<control type="group">
@@ -127,7 +125,7 @@
 								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)</visible>
 								<texture>black-back2.png</texture>
 							</control>
-							<control type="button">
+							<control type="button" id="2002">
 							      <description>Cloud And Rain Overlay Button</description>
 							      <posx>0</posx>
 							      <posy>0</posy>
@@ -137,6 +135,10 @@
 					              <texturenofocus>button-nofocus.png</texturenofocus>
 					              <onclick>SetProperty(ForecastMap.LayerSelection, CloudAndRain)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+								  <onleft>9000</onleft>
+								  <onright>9000</onright>
+  								  <onup>2001</onup>
+  								  <ondown>2003</ondown>
 							</control>
 						</control>
 						<control type="group">
@@ -153,7 +155,7 @@
 								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Cloud)</visible>
 								<texture>black-back2.png</texture>
 							</control>
-							<control type="button">
+							<control type="button" id="2003">
 							      <description>Cloud Overlay Button</description>
 							      <posx>0</posx>
 							      <posy>0</posy>
@@ -163,6 +165,10 @@
 					              <texturenofocus>button-nofocus.png</texturenofocus>
 					              <onclick>SetProperty(ForecastMap.LayerSelection, Cloud)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+								  <onleft>9000</onleft>
+								  <onright>9000</onright>
+  								  <onup>2002</onup>
+  								  <ondown>2004</ondown>
 							</control>
 						</control>
 						<control type="group">
@@ -179,7 +185,7 @@
 								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
 								<texture>black-back2.png</texture>
 							</control>
-							<control type="button">
+							<control type="button" id="2004">
 							      <description>Temperature Overlay Button</description>
 							      <posx>0</posx>
 							      <posy>0</posy>
@@ -189,6 +195,10 @@
 					              <texturenofocus>button-nofocus.png</texturenofocus>
 					              <onclick>SetProperty(ForecastMap.LayerSelection, Temperature)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+								  <onleft>9000</onleft>
+								  <onright>9000</onright>
+  								  <onup>2003</onup>
+  								  <ondown>2005</ondown>
 							</control>
 						</control>
 						<control type="group">
@@ -205,7 +215,7 @@
 								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Pressure)</visible>
 								<texture>black-back2.png</texture>
 							</control>
-							<control type="button">
+							<control type="button" id="2005">
 							      <description>Pressure Overlay Button</description>
 							      <posx>0</posx>
 							      <posy>0</posy>
@@ -215,6 +225,10 @@
 					              <texturenofocus>button-nofocus.png</texturenofocus>
 					              <onclick>SetProperty(ForecastMap.LayerSelection, Pressure)</onclick>
 								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+								  <onleft>9000</onleft>
+								  <onright>9000</onright>
+  								  <onup>2004</onup>
+  								  <ondown>2000</ondown>
 							</control>
 						</control>
 					</control>

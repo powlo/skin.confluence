@@ -11,6 +11,10 @@
 				<height>60</height>
 				<texturenofocus></texturenofocus>
 				<texturefocus></texturefocus>
+				<onleft>RunScript(weather.metoffice, ForecastMap, -1)</onleft>
+				<onright>RunScript(weather.metoffice, ForecastMap, 1)</onright>
+				<onup>2005</onup>
+				<ondown>2001</ondown>
 			</control>
 			<control type="group">
 				<width>345</width>
