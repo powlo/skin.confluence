@@ -315,6 +315,88 @@
 						<texture>weather/key/temp.png</texture>
 					</control>
 				</control>
+				<control type="group">
+					<visible>[StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)]</visible>
+					<control type="grouplist">
+						<description>Grouping of rainfall labels</description>
+						<posx>-30</posx>
+						<posy>20</posy>
+						<height>434</height>
+						<orientation>vertical</orientation>
+						<itemgap>55</itemgap>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>>32</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>16-32</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>8-16</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>4-8</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>2-4</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>1-2</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>0.5-1</label>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<width>60</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>0.01-0.5</label>
+							<align>right</align>
+						</control>
+					</control>
+					<control type="label">
+						<description>Rainfall Units</description>
+						<posx>30</posx>
+						<posy>-5</posy>
+						<width>120</width>
+						<font>font10</font>
+						<textcolor>white</textcolor>
+						<label>mm/hour</label>
+						<align>right</align>
+					</control>
+					<control type="image">
+						<posx>40</posx>
+						<height>434</height>
+						<texture>weather/key/rainfall.png</texture>
+					</control>
+				</control>
 			</control>
 			<control type="label">
 				<description>issued at label</description>
