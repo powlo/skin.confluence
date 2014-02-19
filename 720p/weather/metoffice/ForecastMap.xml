@@ -18,12 +18,12 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group">
-				<posx>120</posx>
+				<posx>85</posx>
 				<posy>90</posy>
 				<width>480</width>
 				<height>494</height>
 				<control type="group">
-					<posx>10</posx>
+					<posx>75</posx>
 					<posy>0</posy>
 					<width>325</width>
 					<height>434</height>
@@ -66,17 +66,17 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>0</posx>
+					<posx>65</posx>
 					<posy>435</posy>
 					<include>TimestepSlider</include>
 				</control>
 				<control type="group">
-					<posx>360</posx>
+					<posx>425</posx>
 					<posy>0</posy>
 					<width>100</width>
 					<height>500</height>
 					<control type="grouplist">
-						<description>Grouping of map overlay images</description>
+						<description>Grouping of map overlay selectors</description>
 						<width>100</width>
 						<height>500</height>
 						<orientation>vertical</orientation>
@@ -231,6 +231,88 @@
   								  <ondown>2000</ondown>
 							</control>
 						</control>
+					</control>
+				</control>
+				<control type="group">
+					<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
+					<control type="grouplist">
+						<description>Grouping of temperature labels</description>
+						<posx>0</posx>
+						<posy>35</posy>
+						<height>434</height>
+						<orientation>vertical</orientation>
+						<itemgap>64</itemgap>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>30</number>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>20</number>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>10</number>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>0</number>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>-10</number>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>-20</number>
+							<align>right</align>
+						</control>
+						<control type="label">
+							<description>issued at label</description>
+							<width>30</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<number>-30</number>
+							<align>right</align>
+						</control>
+					</control>
+					<control type="label">
+						<description>Temperature Units</description>
+						<posx>30</posx>
+						<posy>-5</posy>
+						<width>30</width>
+						<font>font14</font>
+						<textcolor>white</textcolor>
+						<label>$INFO[System.TemperatureUnits]</label>
+						<align>right</align>
+					</control>
+					<control type="image">
+						<posx>40</posx>
+						<height>434</height>
+						<texture>weather/key/temp.png</texture>
 					</control>
 				</control>
 			</control>
