@@ -16,7 +16,7 @@
 	<include file="weather\default\SideBladeContents.xml" />
 	<include file="weather\metoffice\RightPane.xml" />
 	<include file="weather\metoffice\LeftPane.xml" />
-	<include file="weather\metoffice\RegionalForecast.xml" />
+	<include file="weather\metoffice\TextForecast.xml" />
 	<include file="weather\metoffice\DailyForecast.xml" />
 	<include file="weather\metoffice\3HourlyForecast.xml" />
 	<include file="weather\metoffice\ForecastMap.xml" />

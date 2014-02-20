@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="MetOfficeRegionalForcast">
+	<include name="MetOfficeTextForcast">
 		<control type="group">
-			<visible>StringCompare(Window.Property(Weather.CurrentView),regional)+!IsEmpty(Window.Property(RegionalForecast.IsFetched))</visible>
+			<visible>StringCompare(Window.Property(Weather.CurrentView),text)+!IsEmpty(Window.Property(TextForecast.IsFetched))</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
@@ -24,7 +24,7 @@
 				<height>515</height>
 				<pagecontrol>57</pagecontrol>
 				<itemgap>10</itemgap>
-				<description>Regional forecast list</description>
+				<description>Text forecast list</description>
 				<visible>Control.IsVisible(56)</visible>
 				<onleft>56</onleft>
 				<onright>9000</onright>
@@ -33,13 +33,13 @@
 					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph0.Title)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph0.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<height>60</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph0.Content)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph0.Content)]</label>
 				</control>
 				<control type="image">
 					<width>570</width>
@@ -51,13 +51,13 @@
 					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph1.Title)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph1.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph1.Content)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph1.Content)]</label>
 				</control>
 				<control type="image">
 					<width>570</width>
@@ -69,13 +69,13 @@
 					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph2.Title)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph2.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph2.Content)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph2.Content)]</label>
 				</control>
 				<control type="image">
 					<width>570</width>
@@ -87,13 +87,13 @@
 					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph3.Title)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph3.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph3.Content)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph3.Content)]</label>
 				</control>
 				<control type="image">
 					<width>570</width>
@@ -105,12 +105,12 @@
 					<width>570</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph4.Title)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph4.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph4.Content)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph4.Content)]</label>
 				</control>
 				<control type="image">
 					<width>570</width>
@@ -122,32 +122,32 @@
 					<width>570</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph5.Title)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph5.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph5.Content)]</label>
+					<label>$INFO[Window.Property(Text.Paragraph5.Content)]</label>
 				</control>
 				<control type="image">
 					<width>570</width>
 					<height>2</height>
 					<texture>separator.png</texture>
-					<visible>!IsEmpty(Window.Property(Regional.Paragraph6.Title))</visible>
+					<visible>!IsEmpty(Window.Property(Text.Paragraph6.Title))</visible>
 				</control>
 				<control type="label">
 					<height>30</height>			
 					<width>570</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Paragraph6.Title)]</label>
-					<visible>!IsEmpty(Window.Property(Regional.Paragraph6.Title))</visible>
+					<label>$INFO[Window.Property(Text.Paragraph6.Title)]</label>
+					<visible>!IsEmpty(Window.Property(Text.Paragraph6.Title))</visible>
 				</control>
 				<control type="textbox">
 					<width>570</width>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Paragraph6.Content)]</label>
-					<visible>!IsEmpty(Window.Property(Regional.Paragraph6.Title))</visible>
+					<label>$INFO[Window.Property(Text.Paragraph6.Content)]</label>
+					<visible>!IsEmpty(Window.Property(Text.Paragraph6.Title))</visible>
 				</control>
 			</control>
 			<control type="label">
@@ -158,7 +158,7 @@
 				<height>35</height>
 				<font>font10</font>
 				<textcolor>white</textcolor>
-				<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(RegionalForecast.IssuedAt)][/COLOR]</label>
+				<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(TextForecast.IssuedAt)][/COLOR]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<textcolor>grey2</textcolor>

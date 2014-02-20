@@ -30,14 +30,6 @@
 			    <onclick>ClearProperty(Weather.CurrentView)</onclick>
 			</control>
 			<control type="button" id="303">
-			    <description>Regional Text forcast button</description>
-			    <textwidth>235</textwidth>
-			    <include>ButtonCommonValues</include>
-			    <label>31804</label>
-			    <onclick>RunScript(weather.metoffice, RegionalForecast)</onclick>
-			    <onclick>SetProperty(Weather.CurrentView,regional)</onclick>
-			</control>
-			<control type="button" id="304">
 			    <description>3 Hour Forecast button</description>
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
@@ -45,13 +37,21 @@
 			    <onclick>RunScript(weather.metoffice, 3HourlyForecast)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,3hourly)</onclick>
 			</control>
-			<control type="button" id="305">
+			<control type="button" id="304">
 			    <description>Forecast Map button</description>
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
 			    <label>31906</label>
 			    <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,maps)</onclick>
+			</control>
+			<control type="button" id="305">
+			    <description>Text forcast button</description>
+			    <textwidth>235</textwidth>
+			    <include>ButtonCommonValues</include>
+			    <label>31804</label>
+			    <onclick>RunScript(weather.metoffice, TextForecast)</onclick>
+			    <onclick>SetProperty(Weather.CurrentView,text)</onclick>
 			</control>
 			<control type="label" id="306">
 				<width>250</width>

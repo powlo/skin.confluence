@@ -27,7 +27,7 @@
 				<texture>GlassTitleBar.png</texture>
 			</control>
 			<control type="group" id="50">
-			<include>MetOfficeRegionalForcast</include>
+			<include>MetOfficeTextForcast</include>
 			<include>MetOfficeDailyForcast</include>
 			<include>MetOffice3HourlyForcast</include>
 			<include>MetOfficeForecastMap</include>

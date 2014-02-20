@@ -611,7 +611,7 @@ msgid "5 Day Forecast"
 msgstr ""
 
 msgctxt "#31804"
-msgid "Regional Text Forecast"
+msgid "Text Forecast"
 msgstr ""
 
 msgctxt "#31805"
