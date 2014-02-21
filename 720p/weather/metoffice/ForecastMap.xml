@@ -2,7 +2,7 @@
 <includes>
 	<include name="MetOfficeForecastMap">
 		<control type="group">
-			<visible>StringCompare(Window.Property(Weather.CurrentView),maps)+!IsEmpty(Window.Property(ForecastMap.IsFetched))</visible>
+			<visible>StringCompare(Window.Property(Weather.CurrentView),maps)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
@@ -18,398 +18,401 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group">
-				<posx>85</posx>
-				<posy>90</posy>
-				<width>480</width>
-				<height>494</height>
+				<visible>!IsEmpty(Window.Property(ForecastMap.IsFetched))</visible>
 				<control type="group">
-					<posx>75</posx>
-					<posy>0</posy>
-					<width>325</width>
-					<height>434</height>
-					<control type="image">
+					<posx>85</posx>
+					<posy>90</posy>
+					<width>480</width>
+					<height>494</height>
+					<control type="group">
+						<posx>75</posx>
+						<posy>0</posy>
 						<width>325</width>
 						<height>434</height>
-						<texture>$INFO[Window.Property(ForecastMap.Surface)]</texture>
-					</control>
-					<control type="image">
-						<width>325</width>
-						<height>434</height>
-						<texture>$INFO[Window.Property(ForecastMap.Layer)]</texture>
-					</control>
-					<control type="image">
-						<width>325</width>
-						<height>434</height>
-						<texture>$INFO[Window.Property(ForecastMap.Marker)]</texture>
+						<control type="image">
+							<width>325</width>
+							<height>434</height>
+							<texture>$INFO[Window.Property(ForecastMap.Surface)]</texture>
+						</control>
+						<control type="image">
+							<width>325</width>
+							<height>434</height>
+							<texture>$INFO[Window.Property(ForecastMap.Layer)]</texture>
+						</control>
+						<control type="image">
+							<width>325</width>
+							<height>434</height>
+							<texture>$INFO[Window.Property(ForecastMap.Marker)]</texture>
+						</control>
+						<control type="group">
+							<control type="image">
+								<posx>215</posx>
+								<posy>10</posy>
+								<width>100</width>
+								<height>30</height>
+								<texture>floor_button.png</texture>
+							</control>
+							<control type="label">
+								<posx>215</posx>
+								<posy>10</posy>
+								<width>100</width>
+								<height>30</height>
+								<description>Shows time for selected timestep</description>
+								<font>font13_title</font>
+								<label>$INFO[Window.Property(ForecastMap.MapTime)]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+							</control>
+						</control>
 					</control>
 					<control type="group">
-						<control type="image">
-							<posx>215</posx>
-							<posy>10</posy>
-							<width>100</width>
-							<height>30</height>
-							<texture>floor_button.png</texture>
-						</control>
-						<control type="label">
-							<posx>215</posx>
-							<posy>10</posy>
-							<width>100</width>
-							<height>30</height>
-							<description>Shows time for selected timestep</description>
-							<font>font13_title</font>
-							<label>$INFO[Window.Property(ForecastMap.MapTime)]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-						</control>
+						<posx>65</posx>
+						<posy>435</posy>
+						<include>TimestepSlider</include>
 					</control>
-				</control>
-				<control type="group">
-					<posx>65</posx>
-					<posy>435</posy>
-					<include>TimestepSlider</include>
-				</control>
-				<control type="group">
-					<posx>425</posx>
-					<posy>0</posy>
-					<width>100</width>
-					<height>500</height>
-					<control type="grouplist">
-						<description>Grouping of map overlay selectors</description>
+					<control type="group">
+						<posx>425</posx>
+						<posy>0</posy>
 						<width>100</width>
 						<height>500</height>
-						<orientation>vertical</orientation>
-						<itemgap>10</itemgap>
-						<control type="group">
-							<width>50</width>
-							<height>50</height>
-							<control type="image">
+						<control type="grouplist">
+							<description>Grouping of map overlay selectors</description>
+							<width>100</width>
+							<height>500</height>
+							<orientation>vertical</orientation>
+							<itemgap>10</itemgap>
+							<control type="group">
 								<width>50</width>
 								<height>50</height>
-								<texture>weather/icons/rain.png</texture>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<texture>weather/icons/rain.png</texture>
+								</control>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ForecastMap.LayerSelection))</visible>
+									<texture>black-back2.png</texture>
+								</control>
+								<control type="button" id="2001">
+								      <description>Rain Overlay Button</description>
+								      <posx>0</posx>
+								      <posy>0</posy>
+								      <width>50</width>
+								      <height>50</height>
+						              <texturefocus>button-focus.png</texturefocus>
+						              <texturenofocus>button-nofocus.png</texturenofocus>
+						              <onclick>SetProperty(ForecastMap.LayerSelection, Rainfall)</onclick>
+									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+									  <onleft>9000</onleft>
+									  <onright>9000</onright>
+									  <onup>2000</onup>
+									  <ondown>2002</ondown>
+								</control>
 							</control>
-							<control type="image">
+							<control type="group">
 								<width>50</width>
 								<height>50</height>
-								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ForecastMap.LayerSelection))</visible>
-								<texture>black-back2.png</texture>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<texture>weather/icons/cloudrain.png</texture>
+								</control>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)</visible>
+									<texture>black-back2.png</texture>
+								</control>
+								<control type="button" id="2002">
+								      <description>Cloud And Rain Overlay Button</description>
+								      <posx>0</posx>
+								      <posy>0</posy>
+								      <width>50</width>
+								      <height>50</height>
+						              <texturefocus>button-focus.png</texturefocus>
+						              <texturenofocus>button-nofocus.png</texturenofocus>
+						              <onclick>SetProperty(ForecastMap.LayerSelection, CloudAndRain)</onclick>
+									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+									  <onleft>9000</onleft>
+									  <onright>9000</onright>
+	  								  <onup>2001</onup>
+	  								  <ondown>2003</ondown>
+								</control>
 							</control>
-							<control type="button" id="2001">
-							      <description>Rain Overlay Button</description>
-							      <posx>0</posx>
-							      <posy>0</posy>
-							      <width>50</width>
-							      <height>50</height>
-					              <texturefocus>button-focus.png</texturefocus>
-					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(ForecastMap.LayerSelection, Rainfall)</onclick>
-								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-								  <onleft>9000</onleft>
-								  <onright>9000</onright>
-								  <onup>2000</onup>
-								  <ondown>2002</ondown>
+							<control type="group">
+								<width>50</width>
+								<height>50</height>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<texture>weather/icons/cloud.png</texture>
+								</control>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Cloud)</visible>
+									<texture>black-back2.png</texture>
+								</control>
+								<control type="button" id="2003">
+								      <description>Cloud Overlay Button</description>
+								      <posx>0</posx>
+								      <posy>0</posy>
+								      <width>50</width>
+								      <height>50</height>
+						              <texturefocus>button-focus.png</texturefocus>
+						              <texturenofocus>button-nofocus.png</texturenofocus>
+						              <onclick>SetProperty(ForecastMap.LayerSelection, Cloud)</onclick>
+									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+									  <onleft>9000</onleft>
+									  <onright>9000</onright>
+	  								  <onup>2002</onup>
+	  								  <ondown>2004</ondown>
+								</control>
+							</control>
+							<control type="group">
+								<width>50</width>
+								<height>50</height>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<texture>weather/icons/temperature.png</texture>
+								</control>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
+									<texture>black-back2.png</texture>
+								</control>
+								<control type="button" id="2004">
+								      <description>Temperature Overlay Button</description>
+								      <posx>0</posx>
+								      <posy>0</posy>
+								      <width>50</width>
+								      <height>50</height>
+						              <texturefocus>button-focus.png</texturefocus>
+						              <texturenofocus>button-nofocus.png</texturenofocus>
+						              <onclick>SetProperty(ForecastMap.LayerSelection, Temperature)</onclick>
+									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+									  <onleft>9000</onleft>
+									  <onright>9000</onright>
+	  								  <onup>2003</onup>
+	  								  <ondown>2005</ondown>
+								</control>
+							</control>
+							<control type="group">
+								<width>50</width>
+								<height>50</height>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<texture>weather/icons/pressure.png</texture>
+								</control>
+								<control type="image">
+									<width>50</width>
+									<height>50</height>
+									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Pressure)</visible>
+									<texture>black-back2.png</texture>
+								</control>
+								<control type="button" id="2005">
+								      <description>Pressure Overlay Button</description>
+								      <posx>0</posx>
+								      <posy>0</posy>
+								      <width>50</width>
+								      <height>50</height>
+						              <texturefocus>button-focus.png</texturefocus>
+						              <texturenofocus>button-nofocus.png</texturenofocus>
+						              <onclick>SetProperty(ForecastMap.LayerSelection, Pressure)</onclick>
+									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+									  <onleft>9000</onleft>
+									  <onright>9000</onright>
+	  								  <onup>2004</onup>
+	  								  <ondown>2000</ondown>
+								</control>
 							</control>
 						</control>
-						<control type="group">
-							<width>50</width>
-							<height>50</height>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<texture>weather/icons/cloudrain.png</texture>
+					</control>
+					<control type="group">
+						<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
+						<control type="grouplist">
+							<description>Grouping of temperature labels</description>
+							<posx>0</posx>
+							<posy>35</posy>
+							<height>434</height>
+							<orientation>vertical</orientation>
+							<itemgap>64</itemgap>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>30</number>
+								<align>right</align>
 							</control>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)</visible>
-								<texture>black-back2.png</texture>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>20</number>
+								<align>right</align>
 							</control>
-							<control type="button" id="2002">
-							      <description>Cloud And Rain Overlay Button</description>
-							      <posx>0</posx>
-							      <posy>0</posy>
-							      <width>50</width>
-							      <height>50</height>
-					              <texturefocus>button-focus.png</texturefocus>
-					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(ForecastMap.LayerSelection, CloudAndRain)</onclick>
-								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-								  <onleft>9000</onleft>
-								  <onright>9000</onright>
-  								  <onup>2001</onup>
-  								  <ondown>2003</ondown>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>10</number>
+								<align>right</align>
 							</control>
-						</control>
-						<control type="group">
-							<width>50</width>
-							<height>50</height>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<texture>weather/icons/cloud.png</texture>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>0</number>
+								<align>right</align>
 							</control>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Cloud)</visible>
-								<texture>black-back2.png</texture>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>-10</number>
+								<align>right</align>
 							</control>
-							<control type="button" id="2003">
-							      <description>Cloud Overlay Button</description>
-							      <posx>0</posx>
-							      <posy>0</posy>
-							      <width>50</width>
-							      <height>50</height>
-					              <texturefocus>button-focus.png</texturefocus>
-					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(ForecastMap.LayerSelection, Cloud)</onclick>
-								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-								  <onleft>9000</onleft>
-								  <onright>9000</onright>
-  								  <onup>2002</onup>
-  								  <ondown>2004</ondown>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>-20</number>
+								<align>right</align>
 							</control>
-						</control>
-						<control type="group">
-							<width>50</width>
-							<height>50</height>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<texture>weather/icons/temperature.png</texture>
-							</control>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
-								<texture>black-back2.png</texture>
-							</control>
-							<control type="button" id="2004">
-							      <description>Temperature Overlay Button</description>
-							      <posx>0</posx>
-							      <posy>0</posy>
-							      <width>50</width>
-							      <height>50</height>
-					              <texturefocus>button-focus.png</texturefocus>
-					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(ForecastMap.LayerSelection, Temperature)</onclick>
-								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-								  <onleft>9000</onleft>
-								  <onright>9000</onright>
-  								  <onup>2003</onup>
-  								  <ondown>2005</ondown>
+							<control type="label">
+								<description>issued at label</description>
+								<width>30</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<number>-30</number>
+								<align>right</align>
 							</control>
 						</control>
-						<control type="group">
-							<width>50</width>
-							<height>50</height>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<texture>weather/icons/pressure.png</texture>
+						<control type="label">
+							<description>Temperature Units</description>
+							<posx>30</posx>
+							<posy>-5</posy>
+							<width>30</width>
+							<font>font14</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[System.TemperatureUnits]</label>
+							<align>right</align>
+						</control>
+						<control type="image">
+							<posx>40</posx>
+							<height>434</height>
+							<texture>weather/key/temp.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<visible>[StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)]</visible>
+						<control type="grouplist">
+							<description>Grouping of rainfall labels</description>
+							<posx>-30</posx>
+							<posy>20</posy>
+							<height>434</height>
+							<orientation>vertical</orientation>
+							<itemgap>55</itemgap>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>>32</label>
+								<align>right</align>
 							</control>
-							<control type="image">
-								<width>50</width>
-								<height>50</height>
-								<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Pressure)</visible>
-								<texture>black-back2.png</texture>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>16-32</label>
+								<align>right</align>
 							</control>
-							<control type="button" id="2005">
-							      <description>Pressure Overlay Button</description>
-							      <posx>0</posx>
-							      <posy>0</posy>
-							      <width>50</width>
-							      <height>50</height>
-					              <texturefocus>button-focus.png</texturefocus>
-					              <texturenofocus>button-nofocus.png</texturenofocus>
-					              <onclick>SetProperty(ForecastMap.LayerSelection, Pressure)</onclick>
-								  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-								  <onleft>9000</onleft>
-								  <onright>9000</onright>
-  								  <onup>2004</onup>
-  								  <ondown>2000</ondown>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>8-16</label>
+								<align>right</align>
 							</control>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>4-8</label>
+								<align>right</align>
+							</control>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>2-4</label>
+								<align>right</align>
+							</control>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>1-2</label>
+								<align>right</align>
+							</control>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>0.5-1</label>
+								<align>right</align>
+							</control>
+							<control type="label">
+								<width>60</width>
+								<font>font10</font>
+								<textcolor>white</textcolor>
+								<label>0.01-0.5</label>
+								<align>right</align>
+							</control>
+						</control>
+						<control type="label">
+							<description>Rainfall Units</description>
+							<posx>30</posx>
+							<posy>-5</posy>
+							<width>120</width>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>mm/hour</label>
+							<align>right</align>
+						</control>
+						<control type="image">
+							<posx>40</posx>
+							<height>434</height>
+							<texture>weather/key/rainfall.png</texture>
 						</control>
 					</control>
 				</control>
-				<control type="group">
-					<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
-					<control type="grouplist">
-						<description>Grouping of temperature labels</description>
-						<posx>0</posx>
-						<posy>35</posy>
-						<height>434</height>
-						<orientation>vertical</orientation>
-						<itemgap>64</itemgap>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>30</number>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>20</number>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>10</number>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>0</number>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>-10</number>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>-20</number>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<description>issued at label</description>
-							<width>30</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<number>-30</number>
-							<align>right</align>
-						</control>
-					</control>
-					<control type="label">
-						<description>Temperature Units</description>
-						<posx>30</posx>
-						<posy>-5</posy>
-						<width>30</width>
-						<font>font14</font>
-						<textcolor>white</textcolor>
-						<label>$INFO[System.TemperatureUnits]</label>
-						<align>right</align>
-					</control>
-					<control type="image">
-						<posx>40</posx>
-						<height>434</height>
-						<texture>weather/key/temp.png</texture>
-					</control>
+				<control type="label">
+					<description>issued at label</description>
+					<posx>620</posx>
+					<posy>580</posy>
+					<width>260</width>
+					<height>35</height>
+					<font>font10</font>
+					<textcolor>white</textcolor>
+					<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(ForecastMap.IssuedAt)][/COLOR]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>grey2</textcolor>
 				</control>
-				<control type="group">
-					<visible>[StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)]</visible>
-					<control type="grouplist">
-						<description>Grouping of rainfall labels</description>
-						<posx>-30</posx>
-						<posy>20</posy>
-						<height>434</height>
-						<orientation>vertical</orientation>
-						<itemgap>55</itemgap>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>>32</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>16-32</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>8-16</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>4-8</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>2-4</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>1-2</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>0.5-1</label>
-							<align>right</align>
-						</control>
-						<control type="label">
-							<width>60</width>
-							<font>font10</font>
-							<textcolor>white</textcolor>
-							<label>0.01-0.5</label>
-							<align>right</align>
-						</control>
-					</control>
-					<control type="label">
-						<description>Rainfall Units</description>
-						<posx>30</posx>
-						<posy>-5</posy>
-						<width>120</width>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<label>mm/hour</label>
-						<align>right</align>
-					</control>
-					<control type="image">
-						<posx>40</posx>
-						<height>434</height>
-						<texture>weather/key/rainfall.png</texture>
-					</control>
-				</control>
-			</control>
-			<control type="label">
-				<description>issued at label</description>
-				<posx>620</posx>
-				<posy>580</posy>
-				<width>260</width>
-				<height>35</height>
-				<font>font10</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(ForecastMap.IssuedAt)][/COLOR]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<textcolor>grey2</textcolor>
 			</control>
 		</control>
 	</include>
