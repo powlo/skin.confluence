@@ -199,12 +199,6 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label>$LOCALIZE[31909]</label>
-							<icon>-</icon>
-							<onclick>noop</onclick>
-							<visible>!Weather.IsFetched</visible>
-						</item>
-						<item>
 							<label>$INFO[Window.Property(Day0.Title)]</label>
 							<icon>$INFO[Window.Property(Day0.OutlookIcon)]</icon>
 							<property name="HighTemp">$INFO[Window.Property(Day0.HighTemp)]</property>
