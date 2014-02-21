@@ -236,7 +236,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
+						<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)|IsEmpty(Window.Property(ForecastMap.LayerSelection))</visible>
 						<control type="grouplist">
 							<description>Grouping of temperature labels</description>
 							<posx>0</posx>
