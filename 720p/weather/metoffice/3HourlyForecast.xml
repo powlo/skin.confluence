@@ -872,6 +872,16 @@
 					<label>([COLOR=blue]$INFO[Container(52).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(52).CurrentPage]/$INFO[Container(52).NumPages][/COLOR])</label>
 				</control>
 			</control>
+			<control type="group">
+				<visible>IsEmpty(Window.Property(3HourlyForecast.IsFetched))</visible>
+				<control type="image">
+					<posx>85</posx>
+					<posy>90</posy>
+					<width>500</width>
+					<height>500</height>
+					<texture>weather/connection/na.png</texture>
+				</control>
+			</control>
 		</control>
 	</include>
 	<variable name="UVColour">

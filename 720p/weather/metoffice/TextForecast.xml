@@ -182,6 +182,16 @@
 					<visible>Control.IsVisible(56)</visible>
 				</control>
 			</control>
+			<control type="group">
+				<visible>IsEmpty(Window.Property(TextForecast.IsFetched))</visible>
+				<control type="image">
+					<posx>85</posx>
+					<posy>90</posy>
+					<width>500</width>
+					<height>500</height>
+					<texture>weather/connection/na.png</texture>
+				</control>
+			</control>
 		</control>
 	</include>
 </includes>

@@ -26,21 +26,21 @@
 				<aspectratio>stretch</aspectratio>
 				<texture>GlassTitleBar.png</texture>
 			</control>
+			<control type="label">
+				<description>header label</description>
+				<posx>20</posx>
+				<posy>13</posy>
+				<width>460</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>$LOCALIZE[31299] - $INFO[Window.Property(Location)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
 			<control type="group">
 				<visible>!IsEmpty(Window.Property(HourlyObservation.IsFetched))</visible>
-				<control type="label">
-					<description>header label</description>
-					<posx>20</posx>
-					<posy>13</posy>
-					<width>460</width>
-					<height>30</height>
-					<font>font13_title</font>
-					<label>$LOCALIZE[31299] - $INFO[Window.Property(Location)]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
 				<control type="image">
 					<description>current weather icon</description>
 					<posx>60</posx>
@@ -227,6 +227,16 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>grey2</textcolor>
+				</control>
+			</control>
+			<control type="group">
+				<visible>IsEmpty(Window.Property(HourlyObservation.IsFetched))</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>90</posy>
+					<width>500</width>
+					<height>500</height>
+					<texture>weather/connection/na.png</texture>
 				</control>
 			</control>
 		</control>

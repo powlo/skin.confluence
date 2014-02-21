@@ -414,6 +414,16 @@
 					<textcolor>grey2</textcolor>
 				</control>
 			</control>
+			<control type="group">
+				<visible>IsEmpty(Window.Property(ForecastMap.IsFetched))</visible>
+				<control type="image">
+					<posx>85</posx>
+					<posy>90</posy>
+					<width>500</width>
+					<height>500</height>
+					<texture>weather/connection/na.png</texture>
+				</control>
+			</control>
 		</control>
 	</include>
 </includes>
