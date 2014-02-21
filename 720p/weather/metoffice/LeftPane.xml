@@ -197,7 +197,7 @@
 					<font>font13</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<info>Window.Property(Current.WindGust)</info>
+					<label>$INFO[Window.Property(Current.WindGust)] mph</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
