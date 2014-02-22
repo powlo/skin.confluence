@@ -423,6 +423,12 @@
 					<height>500</height>
 					<texture>weather/connection/na.png</texture>
 				</control>
+				<control type="button">
+					<description>hidden button to allow return to sidebar</description>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+					<onleft>9000</onleft>
+				</control>
 			</control>
 		</control>
 	</include>
