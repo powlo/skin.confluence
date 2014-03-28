@@ -11,8 +11,11 @@
 				<height>60</height>
 				<texturenofocus></texturenofocus>
 				<texturefocus></texturefocus>
-				<onleft>RunScript(weather.metoffice, ForecastMap, -1)</onleft>
-				<onright>RunScript(weather.metoffice, ForecastMap, 1)</onright>
+				DecrementSliderPosition
+				<onleft>SetProperty(ForecastMap.SliderPosition, $VAR[DecrementSliderPosition])</onleft>
+				<onleft>RunScript(weather.metoffice, ForecastMap)</onleft>
+				<onright>SetProperty(ForecastMap.SliderPosition, $VAR[IncrementSliderPosition])</onright>
+				<onright>RunScript(weather.metoffice, ForecastMap)</onright>
 				<onup>2005</onup>
 				<ondown>2001</ondown>
 			</control>
@@ -450,4 +453,34 @@
 			</control>
 		</control>
 	</include>
+	<variable name="IncrementSliderPosition">
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),0)">1</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),1)">2</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),2)">3</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),3)">4</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),4)">5</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),5)">6</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),6)">7</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),7)">8</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),8)">9</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),9)">10</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),10)">11</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),11)">12</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),12)">12</value>
+	</variable>
+	<variable name="DecrementSliderPosition">
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),0)">0</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),1)">0</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),2)">1</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),3)">2</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),4)">3</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),5)">4</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),6)">5</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),7)">6</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),8)">7</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),9)">8</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),10)">9</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),11)">10</value>
+		<value condition="StringCompare(Window.Property(ForecastMap.SliderPosition),12)">11</value>
+	</variable>
 </includes>
