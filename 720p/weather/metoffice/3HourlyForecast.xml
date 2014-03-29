@@ -75,7 +75,19 @@
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.Property(ActualTemp),weather/temp/,.png]</texture>
+							<texture>$INFO[ListItem.Property(ActualTempIcon),weather/temp/,.png]</texture>
+						</control>
+						<control type="label">
+							<description>actual temperature text</description>
+							<posx>225</posx>
+							<posy>15</posy>
+							<width>70</width>
+							<height>70</height>
+							<font>font13_title</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Property(ActualTemp)]</label>
+							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
 							<posx>200</posx>
@@ -91,7 +103,19 @@
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.Property(FeelsLikeTemp),weather/temp/,.png]</texture>
+							<texture>$INFO[ListItem.Property(FeelsLikeTempIcon),weather/temp/,.png]</texture>
+						</control>
+						<control type="label">
+							<description>actual temperature text</description>
+							<posx>295</posx>
+							<posy>15</posy>
+							<width>70</width>
+							<height>70</height>
+							<font>font13_title</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Property(FeelsLikeTemp)]</label>
+							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
 							<posx>270</posx>
@@ -217,7 +241,19 @@
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.Property(ActualTemp),weather/temp/,.png]</texture>
+							<texture>$INFO[ListItem.Property(ActualTempIcon),weather/temp/,.png]</texture>
+						</control>
+						<control type="label">
+							<description>actual temperature text</description>
+							<posx>225</posx>
+							<posy>15</posy>
+							<width>70</width>
+							<height>70</height>
+							<font>font13_title</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Property(ActualTemp)]</label>
+							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
 							<posx>200</posx>
@@ -233,7 +269,19 @@
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.Property(FeelsLikeTemp),weather/temp/,.png]</texture>
+							<texture>$INFO[ListItem.Property(FeelsLikeTempIcon),weather/temp/,.png]</texture>
+						</control>
+						<control type="label">
+							<description>actual temperature text</description>
+							<posx>295</posx>
+							<posy>15</posy>
+							<width>70</width>
+							<height>70</height>
+							<font>font13_title</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Property(FeelsLikeTemp)]</label>
+							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
 							<posx>270</posx>
@@ -311,7 +359,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly0.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly0.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly0.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly0.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly0.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly0.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly0.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly0.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly0.GustSpeed)]</property>
@@ -324,7 +374,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly1.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly1.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly1.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly1.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly1.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly1.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly1.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly1.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly1.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly1.GustSpeed)]</property>
@@ -337,7 +389,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly2.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly2.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly2.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly2.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly2.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly2.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly2.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly2.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly2.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly2.GustSpeed)]</property>
@@ -350,7 +404,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly3.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly3.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly3.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly3.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly3.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly3.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly3.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly3.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly3.GustSpeed)]</property>
@@ -363,7 +419,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly4.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly4.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly4.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly4.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly4.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly4.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly4.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly4.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly4.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly4.GustSpeed)]</property>
@@ -376,7 +434,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly5.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly5.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly5.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly5.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly5.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly5.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly5.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly5.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly5.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly5.GustSpeed)]</property>
@@ -389,7 +449,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly6.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly6.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly6.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly6.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly6.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly6.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly6.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly6.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly6.GustSpeed)]</property>
@@ -402,7 +464,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly7.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly7.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly7.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly7.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly7.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly7.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly7.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly7.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly7.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly7.GustSpeed)]</property>
@@ -415,7 +479,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly8.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly8.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly8.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly8.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly8.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly8.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly8.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly8.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly8.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly8.GustSpeed)]</property>
@@ -428,7 +494,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly9.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly9.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly9.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly9.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly9.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly9.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly9.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly9.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly9.GustSpeed)]</property>
@@ -441,7 +509,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly10.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly10.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly10.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly10.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly10.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly10.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly10.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly10.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly10.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly10.GustSpeed)]</property>
@@ -454,7 +524,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly11.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly11.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly11.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly11.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly11.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly11.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly11.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly11.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly11.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly11.GustSpeed)]</property>
@@ -467,7 +539,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly12.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly12.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly12.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly12.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly12.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly12.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly12.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly12.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly12.GustSpeed)]</property>
@@ -480,7 +554,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly13.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly13.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly13.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly13.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly13.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly13.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly13.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly13.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly13.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly13.GustSpeed)]</property>
@@ -493,7 +569,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly14.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly14.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly14.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly14.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly14.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly14.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly14.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly14.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly14.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly14.GustSpeed)]</property>
@@ -506,7 +584,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly15.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly15.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly15.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly15.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly15.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly15.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly15.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly15.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly15.GustSpeed)]</property>
@@ -519,7 +599,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly16.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly16.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly16.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly16.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly16.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly16.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly16.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly16.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly16.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly16.GustSpeed)]</property>
@@ -532,7 +614,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly17.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly17.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly17.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly17.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly17.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly17.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly17.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly17.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly17.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly17.GustSpeed)]</property>
@@ -545,7 +629,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly18.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly18.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly18.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly18.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly18.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly18.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly18.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly18.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly18.GustSpeed)]</property>
@@ -558,7 +644,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly19.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly19.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly19.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly19.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly19.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly19.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly19.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly19.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly19.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly19.GustSpeed)]</property>
@@ -571,7 +659,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly20.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly20.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly20.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly20.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly20.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly20.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly20.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly20.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly20.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly20.GustSpeed)]</property>
@@ -584,7 +674,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly21.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly21.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly21.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly21.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly21.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly21.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly21.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly21.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly21.GustSpeed)]</property>
@@ -597,7 +689,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly22.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly22.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly22.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly22.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly22.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly22.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly22.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly22.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly22.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly22.GustSpeed)]</property>
@@ -610,7 +704,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly23.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly23.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly23.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly23.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly23.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly23.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly23.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly23.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly23.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly23.GustSpeed)]</property>
@@ -623,7 +719,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly24.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly24.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly24.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly24.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly24.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly24.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly24.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly24.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly24.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly24.GustSpeed)]</property>
@@ -636,7 +734,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly25.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly25.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly25.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly25.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly25.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly25.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly25.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly25.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly25.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly25.GustSpeed)]</property>
@@ -649,7 +749,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly26.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly26.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly26.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly26.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly26.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly26.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly26.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly26.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly26.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly26.GustSpeed)]</property>
@@ -662,7 +764,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly27.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly27.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly27.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly27.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly27.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly27.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly27.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly27.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly27.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly27.GustSpeed)]</property>
@@ -675,7 +779,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly28.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly28.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly28.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly28.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly28.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly28.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly28.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly28.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly28.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly28.GustSpeed)]</property>
@@ -688,7 +794,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly29.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly29.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly29.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly29.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly29.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly29.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly29.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly29.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly29.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly29.GustSpeed)]</property>
@@ -701,7 +809,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly30.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly30.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly30.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly30.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly30.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly30.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly30.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly30.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly30.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly30.GustSpeed)]</property>
@@ -714,7 +824,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly31.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly31.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly31.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly31.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly31.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly31.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly31.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly31.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly31.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly31.GustSpeed)]</property>
@@ -727,7 +839,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly32.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly32.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly32.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly32.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly32.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly32.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly32.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly32.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly32.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly32.GustSpeed)]</property>
@@ -740,7 +854,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly33.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly33.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly33.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly33.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly33.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly33.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly33.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly33.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly33.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly33.GustSpeed)]</property>
@@ -753,7 +869,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly34.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly34.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly34.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly34.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly34.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly34.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly34.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly34.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly34.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly34.GustSpeed)]</property>
@@ -766,7 +884,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly35.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly35.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly35.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly35.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly35.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly35.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly35.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly35.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly35.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly35.GustSpeed)]</property>
@@ -779,7 +899,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly36.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly36.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly36.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly36.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly36.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly36.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly36.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly36.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly36.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly36.GustSpeed)]</property>
@@ -792,7 +914,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly37.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly37.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly37.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly37.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly37.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly37.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly37.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly37.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly37.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly37.GustSpeed)]</property>
@@ -805,7 +929,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly38.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly38.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly38.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly38.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly38.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly38.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly38.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly38.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly38.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly38.GustSpeed)]</property>
@@ -818,7 +944,9 @@
 							<label>[B]$INFO[Window.Property(3Hourly39.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly39.Day)][/COLOR]</label>
 							<icon>$INFO[Window.Property(3Hourly39.OutlookIcon)]</icon>
 							<property name="ActualTemp">$INFO[Window.Property(3Hourly39.ActualTemp)]</property>
+							<property name="ActualTempIcon">$INFO[Window.Property(3Hourly39.ActualTempIcon)]</property>
 							<property name="FeelsLikeTemp">$INFO[Window.Property(3Hourly39.FeelsLikeTemp)]</property>
+							<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly39.FeelsLikeTempIcon)]</property>
 							<property name="WindSpeed">$INFO[Window.Property(3Hourly39.WindSpeed)]</property>
 							<property name="WindDirection">$INFO[Window.Property(3Hourly39.WindDirection)]</property>
 							<property name="GustSpeed">$INFO[Window.Property(3Hourly39.GustSpeed)]</property>
