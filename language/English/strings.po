@@ -650,7 +650,9 @@ msgctxt "#31906"
 msgid "Forecast Maps"
 msgstr ""
 
-#empty string 31907
+msgctxt "#31907"
+msgid "Observation Maps"
+msgstr ""
 
 msgctxt "#31908"
 msgid "Chance of Precipitation"

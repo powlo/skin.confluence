@@ -43,9 +43,17 @@
 			    <include>ButtonCommonValues</include>
 			    <label>31906</label>
 			    <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
-			    <onclick>SetProperty(Weather.CurrentView,maps)</onclick>
+			    <onclick>SetProperty(Weather.CurrentView,forecastmap)</onclick>
 			</control>
 			<control type="button" id="305">
+			    <description>Observation Map button</description>
+			    <textwidth>235</textwidth>
+			    <include>ButtonCommonValues</include>
+			    <label>31907</label>
+			    <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
+			    <onclick>SetProperty(Weather.CurrentView,observationmap)</onclick>
+			</control>
+			<control type="button" id="306">
 			    <description>Text forcast button</description>
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>

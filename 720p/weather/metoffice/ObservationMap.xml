@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="MetOfficeForecastMap">
+	<include name="MetOfficeObservationMap">
 		<control type="group">
-			<visible>StringCompare(Window.Property(Weather.CurrentView),forecastmap)</visible>
+			<visible>StringCompare(Window.Property(Weather.CurrentView),observationmap)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
@@ -11,14 +11,14 @@
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
-				<label>$LOCALIZE[31906]</label>
+				<label>$LOCALIZE[31907]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group">
-				<visible>!IsEmpty(Window.Property(ForecastMap.IsFetched))</visible>
+				<visible>!IsEmpty(Window.Property(ObservationMap.IsFetched))</visible>
 				<control type="group">
 					<posx>85</posx>
 					<posy>90</posy>
@@ -32,17 +32,17 @@
 						<control type="image">
 							<width>325</width>
 							<height>434</height>
-							<texture>$INFO[Window.Property(ForecastMap.Surface)]</texture>
+							<texture>$INFO[Window.Property(ObservationMap.Surface)]</texture>
 						</control>
 						<control type="image">
 							<width>325</width>
 							<height>434</height>
-							<texture>$INFO[Window.Property(ForecastMap.Layer)]</texture>
+							<texture>$INFO[Window.Property(ObservationMap.Layer)]</texture>
 						</control>
 						<control type="image">
 							<width>325</width>
 							<height>434</height>
-							<texture>$INFO[Window.Property(ForecastMap.Marker)]</texture>
+							<texture>$INFO[Window.Property(ObservationMap.Marker)]</texture>
 						</control>
 						<control type="group">
 							<control type="image">
@@ -59,7 +59,7 @@
 								<height>30</height>
 								<description>Shows time for selected timestep</description>
 								<font>font13_title</font>
-								<label>$INFO[Window.Property(ForecastMap.MapTime)]</label>
+								<label>$INFO[Window.Property(ObservationMap.MapTime)]</label>
 								<align>center</align>
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
@@ -70,7 +70,7 @@
 					<control type="group">
 						<posx>65</posx>
 						<posy>435</posy>
-						<include>ForecastTimestepSlider</include>
+						<include>ObservationTimestepSlider</include>
 					</control>
 					<control type="group">
 						<posx>425</posx>
@@ -94,7 +94,7 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ForecastMap.LayerSelection))</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ObservationMap.LayerSelection))</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2001">
@@ -105,8 +105,8 @@
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ForecastMap.LayerSelection, Rainfall)</onclick>
-									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, Rainfall)</onclick>
+									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
 									  <onup>2000</onup>
@@ -124,7 +124,7 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), CloudAndRain)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2002">
@@ -135,8 +135,8 @@
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ForecastMap.LayerSelection, CloudAndRain)</onclick>
-									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, CloudAndRain)</onclick>
+									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
 	  								  <onup>2001</onup>
@@ -154,7 +154,7 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Cloud)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Cloud)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2003">
@@ -165,8 +165,8 @@
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ForecastMap.LayerSelection, Cloud)</onclick>
-									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, Cloud)</onclick>
+									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
 	  								  <onup>2002</onup>
@@ -184,7 +184,7 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Temperature)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2004">
@@ -195,8 +195,8 @@
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ForecastMap.LayerSelection, Temperature)</onclick>
-									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, Temperature)</onclick>
+									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
 	  								  <onup>2003</onup>
@@ -214,7 +214,7 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Pressure)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Pressure)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2005">
@@ -225,8 +225,8 @@
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ForecastMap.LayerSelection, Pressure)</onclick>
-									  <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, Pressure)</onclick>
+									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
 	  								  <onup>2004</onup>
@@ -236,7 +236,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>StringCompare(Window.Property(ForecastMap.LayerSelection), Temperature)</visible>
+						<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Temperature)</visible>
 						<control type="grouplist">
 							<description>Grouping of temperature labels</description>
 							<posx>0</posx>
@@ -318,7 +318,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>[StringCompare(Window.Property(ForecastMap.LayerSelection), Rainfall)|StringCompare(Window.Property(ForecastMap.LayerSelection), CloudAndRain)|IsEmpty(Window.Property(ForecastMap.LayerSelection))]</visible>
+						<visible>[StringCompare(Window.Property(ObservationMap.LayerSelection), Rainfall)|StringCompare(Window.Property(ObservationMap.LayerSelection), CloudAndRain)|IsEmpty(Window.Property(ObservationMap.LayerSelection))]</visible>
 						<control type="grouplist">
 							<description>Grouping of rainfall labels</description>
 							<posx>-30</posx>
@@ -408,14 +408,14 @@
 					<height>35</height>
 					<font>font10</font>
 					<textcolor>white</textcolor>
-					<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(ForecastMap.IssuedAt)][/COLOR]</label>
+					<label>$LOCALIZE[31302] : [COLOR=orange]$INFO[Window.Property(ObservationMap.IssuedAt)][/COLOR]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>grey2</textcolor>
 				</control>
 			</control>
 			<control type="group">
-				<visible>IsEmpty(Window.Property(ForecastMap.IsFetched))</visible>
+				<visible>IsEmpty(Window.Property(ObservationMap.IsFetched))</visible>
 				<control type="image">
 					<posx>85</posx>
 					<posy>90</posy>
