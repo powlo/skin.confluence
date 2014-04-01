@@ -119,23 +119,23 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<texture>weather/icons/cloudrain.png</texture>
+									<texture>weather/icons/lightning.png</texture>
 								</control>
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), CloudAndRain)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Lightning)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2002">
-								      <description>Cloud And Rain Overlay Button</description>
+								      <description>Lightning Overlay Button</description>
 								      <posx>0</posx>
 								      <posy>0</posy>
 								      <width>50</width>
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ObservationMap.LayerSelection, CloudAndRain)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, Lightning)</onclick>
 									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
@@ -149,23 +149,23 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<texture>weather/icons/cloud.png</texture>
+									<texture>weather/icons/satelliteir.png</texture>
 								</control>
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Cloud)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), SatelliteIR)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2003">
-								      <description>Cloud Overlay Button</description>
+								      <description>SatelliteIR Overlay Button</description>
 								      <posx>0</posx>
 								      <posy>0</posy>
 								      <width>50</width>
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ObservationMap.LayerSelection, Cloud)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, SatelliteIR)</onclick>
 									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
@@ -179,23 +179,23 @@
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<texture>weather/icons/temperature.png</texture>
+									<texture>weather/icons/satellitevis.png</texture>
 								</control>
 								<control type="image">
 									<width>50</width>
 									<height>50</height>
-									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Temperature)</visible>
+									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), SatelliteVis)</visible>
 									<texture>black-back2.png</texture>
 								</control>
 								<control type="button" id="2004">
-								      <description>Temperature Overlay Button</description>
+								      <description>SatelliteVis Overlay Button</description>
 								      <posx>0</posx>
 								      <posy>0</posy>
 								      <width>50</width>
 								      <height>50</height>
 						              <texturefocus>button-focus.png</texturefocus>
 						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ObservationMap.LayerSelection, Temperature)</onclick>
+						              <onclick>SetProperty(ObservationMap.LayerSelection, SatelliteVis)</onclick>
 									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
 									  <onleft>9000</onleft>
 									  <onright>9000</onright>
@@ -203,122 +203,10 @@
 	  								  <ondown>2005</ondown>
 								</control>
 							</control>
-							<control type="group">
-								<width>50</width>
-								<height>50</height>
-								<control type="image">
-									<width>50</width>
-									<height>50</height>
-									<texture>weather/icons/pressure.png</texture>
-								</control>
-								<control type="image">
-									<width>50</width>
-									<height>50</height>
-									<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Pressure)</visible>
-									<texture>black-back2.png</texture>
-								</control>
-								<control type="button" id="2005">
-								      <description>Pressure Overlay Button</description>
-								      <posx>0</posx>
-								      <posy>0</posy>
-								      <width>50</width>
-								      <height>50</height>
-						              <texturefocus>button-focus.png</texturefocus>
-						              <texturenofocus>button-nofocus.png</texturenofocus>
-						              <onclick>SetProperty(ObservationMap.LayerSelection, Pressure)</onclick>
-									  <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
-									  <onleft>9000</onleft>
-									  <onright>9000</onright>
-	  								  <onup>2004</onup>
-	  								  <ondown>2000</ondown>
-								</control>
-							</control>
 						</control>
 					</control>
 					<control type="group">
-						<visible>StringCompare(Window.Property(ObservationMap.LayerSelection), Temperature)</visible>
-						<control type="grouplist">
-							<description>Grouping of temperature labels</description>
-							<posx>0</posx>
-							<posy>35</posy>
-							<height>434</height>
-							<orientation>vertical</orientation>
-							<itemgap>64</itemgap>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>30</number>
-								<align>right</align>
-							</control>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>20</number>
-								<align>right</align>
-							</control>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>10</number>
-								<align>right</align>
-							</control>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>0</number>
-								<align>right</align>
-							</control>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>-10</number>
-								<align>right</align>
-							</control>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>-20</number>
-								<align>right</align>
-							</control>
-							<control type="label">
-								<description>issued at label</description>
-								<width>30</width>
-								<font>font10</font>
-								<textcolor>white</textcolor>
-								<number>-30</number>
-								<align>right</align>
-							</control>
-						</control>
-						<control type="label">
-							<description>Temperature Units</description>
-							<posx>30</posx>
-							<posy>-5</posy>
-							<width>30</width>
-							<font>font14</font>
-							<textcolor>white</textcolor>
-							<label>$INFO[System.TemperatureUnits]</label>
-							<align>right</align>
-						</control>
-						<control type="image">
-							<posx>40</posx>
-							<height>434</height>
-							<texture>weather/key/temp.png</texture>
-						</control>
-					</control>
-					<control type="group">
-						<visible>[StringCompare(Window.Property(ObservationMap.LayerSelection), Rainfall)|StringCompare(Window.Property(ObservationMap.LayerSelection), CloudAndRain)|IsEmpty(Window.Property(ObservationMap.LayerSelection))]</visible>
+						<visible>[StringCompare(Window.Property(ObservationMap.LayerSelection), Rainfall)|IsEmpty(Window.Property(ObservationMap.LayerSelection))]</visible>
 						<control type="grouplist">
 							<description>Grouping of rainfall labels</description>
 							<posx>-30</posx>
