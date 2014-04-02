@@ -453,6 +453,7 @@
 		</control>
 	</include>
 	<variable name="IncrementForecastSliderPosition">
+		<value condition="IsEmpty(Window.Property(ForecastMap.Slider))">1</value>
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),0)">1</value>
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),1)">2</value>
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),2)">3</value>
@@ -468,6 +469,7 @@
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),12)">12</value>
 	</variable>
 	<variable name="DecrementForecastSliderPosition">
+		<value condition="IsEmpty(Window.Property(ForecastMap.Slider))">0</value>
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),0)">0</value>
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),1)">0</value>
 		<value condition="StringCompare(Window.Property(ForecastMap.Slider),2)">1</value>
