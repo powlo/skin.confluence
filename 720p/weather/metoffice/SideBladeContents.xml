@@ -61,7 +61,7 @@
 			    <onclick>RunScript(weather.metoffice, TextForecast)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,text)</onclick>
 			</control>
-			<control type="label" id="306">
+			<control type="label" id="307">
 				<width>250</width>
 				<height>35</height>
 				<font>font12</font>
