@@ -26,7 +26,7 @@
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
 			    <label>31803</label>
-			    <onclick>RunScript(weather.metoffice, DailyForecast)</onclick>
+			    <onclick>RunScript(weather.metoffice)</onclick>
 			    <onclick>ClearProperty(Weather.CurrentView)</onclick>
 			</control>
 			<control type="button" id="303">
@@ -34,7 +34,7 @@
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
 			    <label>31805</label>
-			    <onclick>RunScript(weather.metoffice, 3HourlyForecast)</onclick>
+			    <onclick>RunScript(weather.metoffice)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,3hourly)</onclick>
 			</control>
 			<control type="button" id="304">
@@ -42,7 +42,7 @@
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
 			    <label>31906</label>
-			    <onclick>RunScript(weather.metoffice, ForecastMap)</onclick>
+			    <onclick>RunScript(weather.metoffice)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,forecastmap)</onclick>
 			</control>
 			<control type="button" id="305">
@@ -50,7 +50,7 @@
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
 			    <label>31907</label>
-			    <onclick>RunScript(weather.metoffice, ObservationMap)</onclick>
+			    <onclick>RunScript(weather.metoffice)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,observationmap)</onclick>
 			</control>
 			<control type="button" id="306">
@@ -58,7 +58,7 @@
 			    <textwidth>235</textwidth>
 			    <include>ButtonCommonValues</include>
 			    <label>31804</label>
-			    <onclick>RunScript(weather.metoffice, TextForecast)</onclick>
+			    <onclick>RunScript(weather.metoffice)</onclick>
 			    <onclick>SetProperty(Weather.CurrentView,text)</onclick>
 			</control>
 			<control type="label" id="307">
