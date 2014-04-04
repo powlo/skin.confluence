@@ -53,7 +53,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
-							<posx>100</posx>
+							<posx>115</posx>
 							<posy>0</posy>
 							<width>100</width>
 							<height>100</height>
@@ -61,7 +61,7 @@
 							<texture>$INFO[ListItem.ActualIcon]</texture>
 						</control>
 						<control type="image">
-							<posx>240</posx>
+							<posx>270</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -70,7 +70,7 @@
 						</control>
 						<control type="label">
 							<description>high temperature text</description>
-							<posx>265</posx>
+							<posx>295</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -81,7 +81,7 @@
 							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
-							<posx>240</posx>
+							<posx>270</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -89,7 +89,7 @@
 							<texture>weather/temp/actual.png</texture>
 						</control>
 						<control type="image">
-							<posx>340</posx>
+							<posx>385</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -98,7 +98,7 @@
 						</control>
 						<control type="label">
 							<description>low temperature text</description>
-							<posx>365</posx>
+							<posx>410</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -109,7 +109,7 @@
 							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
-							<posx>340</posx>
+							<posx>385</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -117,7 +117,7 @@
 							<texture>weather/temp/actual.png</texture>
 						</control>
 						<control type="image">
-							<posx>430</posx>
+							<posx>490</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -126,7 +126,7 @@
 						</control>
 						<control type="label">
 							<description>wind speed text</description>
-							<posx>465</posx>
+							<posx>525</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -161,7 +161,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
-							<posx>100</posx>
+							<posx>115</posx>
 							<posy>0</posy>
 							<width>100</width>
 							<height>100</height>
@@ -169,7 +169,7 @@
 							<texture>$INFO[ListItem.ActualIcon]</texture>
 						</control>
 						<control type="image">
-							<posx>240</posx>
+							<posx>270</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -178,7 +178,7 @@
 						</control>
 						<control type="label">
 							<description>high temperature text</description>
-							<posx>265</posx>
+							<posx>295</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -189,7 +189,7 @@
 							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
-							<posx>240</posx>
+							<posx>270</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -197,7 +197,7 @@
 							<texture>weather/temp/actual.png</texture>
 						</control>
 						<control type="image">
-							<posx>340</posx>
+							<posx>385</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -206,7 +206,7 @@
 						</control>
 						<control type="label">
 							<description>low temperature text</description>
-							<posx>365</posx>
+							<posx>410</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -217,7 +217,7 @@
 							<textcolor>black</textcolor>
 						</control>
 						<control type="image">
-							<posx>340</posx>
+							<posx>385</posx>
 							<posy>25</posy>
 							<width>50</width>
 							<height>50</height>
@@ -225,7 +225,7 @@
 							<texture>weather/temp/actual.png</texture>
 						</control>
 						<control type="image">
-							<posx>430</posx>
+							<posx>490</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
@@ -234,7 +234,7 @@
 						</control>
 						<control type="label">
 							<description>wind speed text</description>
-							<posx>465</posx>
+							<posx>525</posx>
 							<posy>15</posy>
 							<width>70</width>
 							<height>70</height>
