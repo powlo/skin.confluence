@@ -249,7 +249,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>30</number>
+								<label>$VAR[Temp30]</label>
 								<align>right</align>
 							</control>
 							<control type="label">
@@ -257,7 +257,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>20</number>
+								<label>$VAR[Temp20]</label>
 								<align>right</align>
 							</control>
 							<control type="label">
@@ -265,7 +265,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>10</number>
+								<label>$VAR[Temp10]</label>
 								<align>right</align>
 							</control>
 							<control type="label">
@@ -273,7 +273,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>0</number>
+								<label>$VAR[Temp0]</label>
 								<align>right</align>
 							</control>
 							<control type="label">
@@ -281,7 +281,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>-10</number>
+								<label>$VAR[Temp-10]</label>
 								<align>right</align>
 							</control>
 							<control type="label">
@@ -289,7 +289,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>-20</number>
+								<label>$VAR[Temp-20]</label>
 								<align>right</align>
 							</control>
 							<control type="label">
@@ -297,7 +297,7 @@
 								<width>30</width>
 								<font>font10</font>
 								<textcolor>white</textcolor>
-								<number>-30</number>
+								<label>$VAR[Temp-30]</label>
 								<align>right</align>
 							</control>
 						</control>
@@ -432,4 +432,32 @@
 			</control>
 		</control>
 	</include>
+	<variable name="Temp30">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">30</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">86</value>
+	</variable>
+	<variable name="Temp20">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">20</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">68</value>
+	</variable>
+	<variable name="Temp10">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">10</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">50</value>
+	</variable>
+	<variable name="Temp0">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">0</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">32</value>
+	</variable>
+	<variable name="Temp-10">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">-10</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">14</value>
+	</variable>
+	<variable name="Temp-20">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">-20</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">-4</value>
+	</variable>
+	<variable name="Temp-30">
+		<value condition="SubString(System.TemperatureUnits, C, Right)">-30</value>
+		<value condition="SubString(System.TemperatureUnits, F, Right)">-22</value>
+	</variable>
 </includes>
