@@ -48,6 +48,7 @@
 					<width>400</width>
 					<height>400</height>
 					<aspectratio>keep</aspectratio>
+					<colordiffuse>BBBBBBBB</colordiffuse>
 					<info>Window.Property(Current.ConditionIcon)</info>
 				</control>
 				<control type="label">
