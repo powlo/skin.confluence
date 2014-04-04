@@ -53,7 +53,7 @@
 				<control type="label">
 					<description>current temp Value</description>
 					<posx>230</posx>
-					<posy>235</posy>
+					<posy>205</posy>
 					<width>180</width>
 					<height>40</height>
 					<font>BigWeatherTemp</font>
@@ -66,7 +66,7 @@
 				<control type="label">
 					<description>current temp Value Units</description>
 					<posx>230</posx>
-					<posy>235</posy>
+					<posy>205</posy>
 					<width>90</width>
 					<height>40</height>
 					<font>WeatherTemp</font>
@@ -79,7 +79,7 @@
 				<control type="label">
 					<description>current condition label</description>
 					<posx>262</posx>
-					<posy>365</posy>
+					<posy>335</posy>
 					<width>460</width>
 					<height>30</height>
 					<info>Window.Property(Current.Condition)</info>
@@ -92,10 +92,36 @@
 				</control>
 				<control type="image">
 					<posx>20</posx>
-					<posy>450</posy>
+					<posy>390</posy>
 					<width>460</width>
 					<height>4</height>
 					<texture>separator.png</texture>
+				</control>
+				<control type="label">
+					<description>current dew point label</description>
+					<posx>230</posx>
+					<posy>400</posy>
+					<width>170</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[405] :</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>current humidity label</description>
+					<posx>230</posx>
+					<posy>430</posy>
+					<width>170</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[406] :</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current visibility label</description>
@@ -147,6 +173,32 @@
 					<aligny>center</aligny>
 					<label>$LOCALIZE[31802] :</label>
 					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>current dew point Value</description>
+					<posx>245</posx>
+					<posy>400</posy>
+					<width>300</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>current humidity Value</description>
+					<posx>245</posx>
+					<posy>430</posy>
+					<width>300</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Window.Property(Current.Humidity)]</label>
+					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
